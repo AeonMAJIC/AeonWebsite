@@ -1,0 +1,69 @@
+header, footer
+{
+    background-color: Black;
+    margin:0px;
+    padding:0px;
+}
+
+body
+{
+    background-color: #292a2b;
+}
+
+p, h1, h2, h3, h4, h5, h6, tr, td
+{
+    color:white;
+}
+
+p
+{
+    font-size: 12px;
+}
+
+.PremierLore
+{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.PremierLore.Oldenburg, .Oldenburg
+{
+    font-family: 'Oldenburg';
+}
+
+.CadreImage
+{
+    border: 1px solid;
+    border-color: #bf9d37;
+}
+
+.ImageRonde
+{
+    border-radius: 50%;
+}
+
+.Tableau
+{
+    text-align: center;
+}
+
+.Tableau.Nom
+{
+    font-size: 20px;
+}
+
+.Tableau.Role
+{
+    font-size: 16px;
+}
+
+.Tableau.Portfolio
+{
+    font-size: 16px;
+}
+
+.CentrerTableau
+{
+    margin-left: auto;
+    margin-right: auto;
+}
