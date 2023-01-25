@@ -18,6 +18,12 @@ body
     background-color: #292a2b;
 }
 
+header, footer
+{
+    margin: 0px;
+    padding: 0px;
+}
+
 p, h1, h2, h3, h4, h5, h6, tr, td
 {
     color:white;
@@ -144,12 +150,8 @@ p
 
 .slide-text
 {
-    position: absolute;
-    color: #ffffff;
+    color: white;
     font-size: 15px;
-    padding: 15px;
-    bottom: 15px;
-    width: 100%;
     text-align: center;
 }
 
