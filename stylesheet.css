@@ -59,6 +59,12 @@ p
     height: 9vw;
 }
 
+
+
+/*TABLEAU*/
+
+
+
 .Tableau, .Centrer
 {
     text-align: center;
@@ -87,6 +93,8 @@ p
 
 
 
+/*FIN TABLEAU*/
+
 /*DIAPORAMA*/
 
 
@@ -95,7 +103,7 @@ p
 
 .slide-container
 {
-    max-width: 100%;
+    max-width: 95%;
     position: relative;
     margin: auto;
 }
