@@ -1,4 +1,4 @@
-*
+*:not(.Clickable)
 {
     cursor: url('./Images/cursor.cur'), auto;
 }
@@ -78,6 +78,11 @@ p
 {
     margin-left: auto;
     margin-right: auto;
+}
+
+.Clickable
+{
+    cursor: pointer;
 }
 
 
