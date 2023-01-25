@@ -3,11 +3,14 @@
     cursor: url('./Images/cursor.cur'), auto;
 }
 
-header, footer
+header
 {
-    background-color: Black;
-    margin:0px;
-    padding:0px;
+    background: linear-gradient(to bottom, Black, #292a2b);
+}
+
+footer
+{
+    background: linear-gradient(to bottom, #292a2b, Black);
 }
 
 body
@@ -52,9 +55,11 @@ p
 .ImageRonde
 {
     border-radius: 50%;
+    width: 9vw;
+    height: 9vw;
 }
 
-.Tableau
+.Tableau, .Centrer
 {
     text-align: center;
 }
@@ -90,7 +95,7 @@ p
 
 .slide-container
 {
-    max-width: 800px;
+    max-width: 100%;
     position: relative;
     margin: auto;
 }
