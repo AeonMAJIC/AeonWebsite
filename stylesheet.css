@@ -233,3 +233,23 @@ p
 
 
 /*FIN DIAPORAMA*/
+
+/*BOUTON*/
+
+/* Style buttons */
+.btn
+{
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 2vh 4vh;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover
+{
+    background-color: navy;
+}
+
+/*FIN BOUTON*/

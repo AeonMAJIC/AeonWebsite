@@ -5,6 +5,7 @@
         <title>Aeon Le Jeu</title>
         <link rel="stylesheet" href="stylesheet.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oldenburg"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Stylesheet de cloudflare pour le bouton-->
         <script src="script.js"></script>
         <link rel="icon" type="image/png" href="./Images/loho_typo_blanc.png"/>
 
@@ -23,13 +24,13 @@
                 <tbody>
                     <tr>
                         <td class="BarreTopCellule">
-                            <a class="TexteBarreTop Clickable">Galerie</a>
+                            <a href="#Galerie" class="TexteBarreTop Clickable">Galerie</a>
                         </td>
                         <td class="BarreTopCellule">
-                            <a class="TexteBarreTop Clickable">L'équipe</a>
+                            <a href="#L'equipe" class="TexteBarreTop Clickable">L'équipe</a>
                         </td>
                         <td class="BarreTopCellule">
-                            <a class="TexteBarreTop Clickable">Télécharger</a>
+                            <a href="#Telecharger" class="TexteBarreTop Clickable">Télécharger</a>
                         </td>
                     </tr>
                 </tbody>
@@ -46,7 +47,7 @@
     </header>
 
     <body>
-        <h1 class="Centrer">Galerie</h1>
+        <h1 class="Centrer" id="Galerie">Galerie</h1>
         <br/><br/>
         <h2 class="Centrer">Visitez un temple perdu</h2>
 
@@ -80,7 +81,7 @@
 
     <footer>
         <div style="text-align:center">
-            <h1 class="Oldenburg">L'équipe</h1>
+            <h1 class="Oldenburg" id="L'equipe">L'équipe</h1>
             <br/>
         
             <table class="CentrerTableau">
@@ -421,9 +422,18 @@
                     </tr>
                 </tbody>
             </table>
-
-
         </div>
+
+        <br/><br/>
+        <h1 class="Centrer" id="Telechargement">Télechargement</h1>
+        <br/><br/>
+
+        <div class="Centrer">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <button class="btn"><i class="fa fa-download"></i> Download</button>
+            </a>
+        </div>
+        <br/><br/><br/><br/>
     </footer>
 
 </html>
