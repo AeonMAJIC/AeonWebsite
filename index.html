@@ -5,7 +5,6 @@
         <title>Aeon Le Jeu</title>
         <link rel="stylesheet" href="stylesheet.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oldenburg"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Stylesheet de cloudflare pour le bouton-->
         <script src="script.js"></script>
         <link rel="icon" type="image/png" href="./Images/loho_typo_blanc.png"/>
 
@@ -39,15 +38,15 @@
         <div class="DerriereBarreTop"></div>
 
         <div style="text-align:center">
-            <img class="ImageAccueil" src="./Images/LogoAeonBlanc.png" alt="Aeon Logo" class="CadreImage">
+            <img class="ImageAccueil" src="./Images/LogoAeonBlanc.png" alt="Aeon Logo" class="CadreImage FullSize">
         </div>
         <br/><br/><br/>
         <p class="PremierLore Oldenburg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit consequat nulla. Nulla blandit dui at dui consectetur ultrices. Phasellus eget erat a velit aliquam vulputate. Nulla finibus orci tortor, nec gravida arcu rhoncus vel. Nam pulvinar leo eget ante ultrices, vel vulputate nunc consectetur. Mauris orci diam, varius at nisi vitae, pellentesque pulvinar massa. Proin ac efficitur tellus. Etiam rhoncus justo a interdum finibus. Proin nisl odio, tincidunt at dapibus ullamcorper, hendrerit sed magna. Ut quis ligula sit amet ipsum molestie tincidunt et non felis. Vivamus dictum, nunc a consectetur aliquet, diam urna scelerisque elit, at placerat neque mauris quis nibh. Vivamus nec fermentum velit. Vestibulum aliquam tempor nulla, in gravida tortor ultrices et. Vivamus finibus neque hendrerit turpis vehicula dictum.</p>
-        <br/><br/><br/>
     </header>
 
     <body>
-        <h1 class="Centrer" id="Galerie">Galerie</h1>
+        <br/><br/><br id="Galerie"/>
+        <h1 class="Centrer">Galerie</h1>
         <br/><br/>
         <h2 class="Centrer">Visitez un temple perdu</h2>
 
@@ -80,8 +79,9 @@
     </body>
 
     <footer>
+        <br/><br id="L'equipe"/>
         <div style="text-align:center">
-            <h1 class="Oldenburg" id="L'equipe">L'équipe</h1>
+            <h1 class="Oldenburg">L'équipe</h1>
             <br/>
         
             <table class="CentrerTableau">
@@ -257,6 +257,11 @@
                     </tr>
                     <tr>
                         <td>
+                            <br/><br/><br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
                             <table>
                                 <tbody>
                                     <tr>
@@ -424,15 +429,38 @@
             </table>
         </div>
 
-        <br/><br/>
-        <h1 class="Centrer" id="Telechargement">Télechargement</h1>
+        <br/><br id="Telecharger"/>
+        <h1 class="Centrer">Télechargement</h1>
         <br/><br/>
 
-        <div class="Centrer">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <button class="btn"><i class="fa fa-download"></i> Download</button>
-            </a>
-        </div>
+        <table class="CentrerTableau">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="Centrer">
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="FullSize">
+                                <button id="btn1" class="btn FullSize"> Download</button>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Centrer">
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="FullSize">
+                                <button id="btn2" class="btn FullSize"> Download (miroir 1)</button>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Centrer">
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="FullSize">
+                                <button id="btn3" class="btn FullSize"> Download (miroir 2)</button>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
         <br/><br/><br/><br/>
     </footer>
 
