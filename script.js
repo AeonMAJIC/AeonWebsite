@@ -33,11 +33,18 @@ window.addEventListener("DOMContentLoaded", function()
     let barreTopHeight = document.getElementsByClassName("BarreTop")[0].clientHeight;
     document.getElementsByClassName("DerriereBarreTop")[0].style.height = barreTopHeight + "px";
 
-    //Mise a jour de la taille des boutons pour tous match ensemble
-    const arrayBtn = [document.getElementById("btn1"), document.getElementById("btn2"), document.getElementById("btn3")]
+    //Mise a jour de la taille des elements hyperlink vers les ancres pour tous match ensemble
+    let hyperTopWidth = document.getElementById("top3").clientWidth;
+    console.error(hyperTopWidth);
+    document.getElementById("top1").style.width = hyperTopWidth + "px";
+    document.getElementById("top2").style.width = hyperTopWidth + "px";
+    document.getElementById("top3").style.width = hyperTopWidth + "px"; //pour une raison inconnu la taille change quand on modifie les deux autres
 
-    var widthmax  = 0;
-    var heightmax = 0;
+    //Mise a jour de la taille des boutons pour tous match ensemble
+    let arrayBtn = [document.getElementById("btn1"), document.getElementById("btn2"), document.getElementById("btn3")]
+
+    let widthmax  = 0;
+    let heightmax = 0;
     for (let index = 0; index < arrayBtn.length; index++)
     {
         if(arrayBtn[index].clientWidth > widthmax)
