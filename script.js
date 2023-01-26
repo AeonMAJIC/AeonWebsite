@@ -1,19 +1,25 @@
 //Écrit par Florian Boireau
 
+
+//CARROUSSEL
 var slideIndex = 1;
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function plusSlides(n, m)
+{
+    showSlides(slideIndex += n, m);
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function currentSlide(n, m)
+{
+    showSlides(slideIndex = n, m);
 }
 
-function showSlides(n) {
+function showSlides(n, m)
+{
     var i;
-    var slides = document.getElementsByClassName("custom-slider");
-    var dots = document.getElementsByClassName("dot");
+    var slides = document.getElementsByClassName("custom-slider" + m);
+    var dots = document.getElementsByClassName("dot" + m);
+    console.error("dot" + m);
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
@@ -61,10 +67,6 @@ window.addEventListener("DOMContentLoaded", function()
     document.getElementById("btn2").style.height = heightmax + "px";
     document.getElementById("btn3").style.height = heightmax + "px";
     
-});
-
-//Initialisation au lancement
-window.addEventListener("load", function()
-{
-    showSlides(slideIndex);
+    showSlides(slideIndex, 1);
+    showSlides(slideIndex, 2);
 });
