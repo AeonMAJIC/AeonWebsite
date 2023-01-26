@@ -24,8 +24,15 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
-//Initialisation au lancement
+//Initialisation au sprélancement
+window.addEventListener("DOMContentLoaded", function()
+{
+    let barreTopHeight = document.getElementsByClassName("BarreTop")[0].clientHeight;
+    document.getElementsByClassName("DerriereBarreTop")[0].style.height = barreTopHeight + "px";
+});
 
-window.addEventListener("load", function(){
+//Initialisation au lancement
+window.addEventListener("load", function()
+{
     showSlides(slideIndex);
 });

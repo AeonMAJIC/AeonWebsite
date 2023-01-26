@@ -16,12 +16,7 @@ footer
 body
 {
     background-color: #292a2b;
-}
-
-header, footer
-{
     margin: 0px;
-    padding: 0px;
 }
 
 p, h1, h2, h3, h4, h5, h6, tr, td
@@ -40,11 +35,40 @@ p
 /*    CLASSES    */
 /*****************/
 
+.BarreTop
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 0.5vh;
+    z-index: 0;
+}
 
+.DerriereBarreTop
+{
+    width: 100%;
+}
+
+.TexteBarreTop
+{
+    font-size: 15px;
+}
+
+.BarreTopTableau
+{
+    border-collapse: collapse;
+}
+
+.BarreTopCellule
+{
+    border-right: 4vh solid #1a1a1a;
+    border-left:  4vh solid #1a1a1a;
+}
 
 .ImageAccueil
 {
-    height: 100vh;
+    height: 100%;
 }
 
 .PremierLore
