@@ -35,7 +35,6 @@ window.addEventListener("DOMContentLoaded", function()
 
     //Mise a jour de la taille des elements hyperlink vers les ancres pour tous match ensemble
     let hyperTopWidth = document.getElementById("top3").clientWidth;
-    console.error(hyperTopWidth);
     document.getElementById("top1").style.width = hyperTopWidth + "px";
     document.getElementById("top2").style.width = hyperTopWidth + "px";
     document.getElementById("top3").style.width = hyperTopWidth + "px"; //pour une raison inconnu la taille change quand on modifie les deux autres
