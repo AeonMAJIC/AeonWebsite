@@ -1,3 +1,5 @@
+/*Écrit par Florian Boireau*/
+
 *:not(.Clickable)
 {
     cursor: url('./Images/cursor.cur'), auto;

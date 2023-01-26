@@ -1,3 +1,5 @@
+//Écrit par Florian Boireau
+
 var slideIndex = 1;
 
 function plusSlides(n) {
