@@ -195,12 +195,12 @@ p
     object-position: center;
 }
 
-.slide-dot
+.slide-selector
 {
     text-align: center;
 }
 
-.dot
+.selector
 {
     cursor: pointer;
     height: 10vh;

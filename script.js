@@ -17,8 +17,8 @@ function currentSlide(n, m)
 function showSlides(n, m)
 {
     var i;
-    var slides = document.querySelectorAll('.custom-slider[data-groupe="' + m + '"]');
-    var dots   = document.querySelectorAll('.dot[data-groupe="'           + m + '"]');
+    var slides    = document.querySelectorAll('.custom-slider[data-groupe="' + m + '"]');
+    var selectors = document.querySelectorAll('.selector[data-groupe="'      + m + '"]');
 
     if (n > slides.length)
         slideIndex = 1
@@ -27,11 +27,11 @@ function showSlides(n, m)
 
     for (i = 0; i < slides.length; i++)
         slides[i].style.display = "none";
-    for (i = 0; i < dots.length; i++)
-        dots[i].className = dots[i].className.replace(" active", "");
+    for (i = 0; i < selectors.length; i++)
+        selectors[i].className = selectors[i].className.replace(" active", "");
 
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    selectors[slideIndex-1].className += " active";
 }
 
 function firstBar()
@@ -47,7 +47,12 @@ function firstBar()
     document.getElementById("top3").style.width = hyperTopWidth + "px"; //pour une raison inconnu la taille change quand on modifie les deux autres
 }
 
-function firstButtons()
+function firstSelectors()
+{
+
+}
+
+function firstDownloadButtons()
 {
     //Mise a jour de la taille des boutons pour tous match ensemble
     let arrayBtn = [document.getElementById("btn1"), document.getElementById("btn2"), document.getElementById("btn3")]
@@ -75,7 +80,7 @@ function firstButtons()
 function firstUpdate()
 {
     firstBar();
-    firstButtons();
+    firstDownloadButtons();
 
     showSlides(slideIndex, 1);
     showSlides(slideIndex, 2);
