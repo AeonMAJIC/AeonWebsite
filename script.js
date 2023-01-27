@@ -18,8 +18,7 @@ function showSlides(n, m)
 {
     var i;
     var slides = document.getElementsByClassName("custom-slider" + m);
-    var dots = document.getElementsByClassName("dot" + m);
-    console.error("dot" + m);
+    var dots = Array.from(document.querySelectorAll("[onclick*='currentSlide']")).filter(dot => dot.getAttribute("onclick").includes(m + ")"));
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
