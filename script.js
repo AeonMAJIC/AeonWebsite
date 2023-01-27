@@ -17,16 +17,19 @@ function currentSlide(n, m)
 function showSlides(n, m)
 {
     var i;
-    var slides = document.getElementsByClassName("custom-slider" + m);
-    var dots = Array.from(document.querySelectorAll("[onclick*='currentSlide']")).filter(dot => dot.getAttribute("onclick").includes(m + ")"));
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
+    var slides = document.querySelectorAll('.custom-slider[data-groupe="' + m + '"]');
+    var dots   = document.querySelectorAll('.dot[data-groupe="'           + m + '"]');
+
+    if (n > slides.length)
+        slideIndex = 1
+    if (n < 1)
+        slideIndex = slides.length
+
+    for (i = 0; i < slides.length; i++)
         slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
+    for (i = 0; i < dots.length; i++)
         dots[i].className = dots[i].className.replace(" active", "");
-    }
+
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
