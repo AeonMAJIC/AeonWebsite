@@ -34,8 +34,7 @@ function showSlides(n, m)
     dots[slideIndex-1].className += " active";
 }
 
-//Initialisation au prélancement
-window.addEventListener("DOMContentLoaded", function()
+function firstBar()
 {
     //Mise a jour de la taille de la barre derriere la barre du haut pour que rien ne soit caché par celle-ci
     let barreTopHeight = document.getElementsByClassName("BarreTop")[0].clientHeight;
@@ -46,7 +45,10 @@ window.addEventListener("DOMContentLoaded", function()
     document.getElementById("top1").style.width = hyperTopWidth + "px";
     document.getElementById("top2").style.width = hyperTopWidth + "px";
     document.getElementById("top3").style.width = hyperTopWidth + "px"; //pour une raison inconnu la taille change quand on modifie les deux autres
+}
 
+function firstButtons()
+{
     //Mise a jour de la taille des boutons pour tous match ensemble
     let arrayBtn = [document.getElementById("btn1"), document.getElementById("btn2"), document.getElementById("btn3")]
 
@@ -68,7 +70,19 @@ window.addEventListener("DOMContentLoaded", function()
     document.getElementById("btn1").style.height = heightmax + "px";
     document.getElementById("btn2").style.height = heightmax + "px";
     document.getElementById("btn3").style.height = heightmax + "px";
-    
+}
+
+function firstUpdate()
+{
+    firstBar();
+    firstButtons();
+
     showSlides(slideIndex, 1);
     showSlides(slideIndex, 2);
+}
+
+//Initialisation au prélancement
+window.addEventListener("DOMContentLoaded", function()
+{
+    firstUpdate();
 });
