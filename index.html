@@ -51,36 +51,40 @@
         <br/><br/>
         <h2 class="Centrer">Thème 1</h2>
 
+        <!--If a new slide-container is added, increment his data-groupe (from custom-slider, selector) by 1 (let's call this i)
+            Also, put all the 2nd var of functions (plusSlide, currentSlide) to i
+            Then add firstSelectors(i); in firstUpdate() in the script.js-->
+            
         <div class="slide-container">
-            <div class="custom-slider fade" data-groupe="1">
+            <div class="custom-slider fade" data-groupe="0">
                 <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                 <img class="slide-img" src="./Images/Diaporama/charite.png">
             </div>
-            <div class="custom-slider fade" data-groupe="1">
+            <div class="custom-slider fade" data-groupe="0">
                 <div class="slide-text">Nullam luctus aliquam ornare. </div>
                 <img class="slide-img" src="./Images/Diaporama/interieur.png">
             </div>
-            <div class="custom-slider fade" data-groupe="1">
+            <div class="custom-slider fade" data-groupe="0">
                 <div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
                 <img class="slide-img" src="./Images/Diaporama/golem.png">
             </div>
-            <div class="custom-slider fade" data-groupe="1">
+            <div class="custom-slider fade" data-groupe="0">
                 <div class="slide-text">Lorem lorem lorem lorem lorem.</div>
                 <img class="slide-img" src="./Images/Diaporama/blondeEtMonsieur.png">
             </div>
-            <div class="custom-slider fade" data-groupe="1">
+            <div class="custom-slider fade" data-groupe="0">
                 <div class="slide-text">Ipsum ipsum issou ipsum.</div>
                 <img class="slide-img" src="./Images/Diaporama/monsieurCapuche.png">
             </div>
-            <a class="prev" onclick="plusSlides(-1, 1)">❮</a>
-            <a class="next" onclick="plusSlides(1, 1)">❯</a>
+            <a class="prev" onclick="plusSlide(-1, 0)">❮</a>
+            <a class="next" onclick="plusSlide(1, 0)">❯</a>
 
             <div class="slide-selector">
-                <span class="selector" onclick="currentSlide(1, 1)" data-groupe="1"></span>
-                <span class="selector" onclick="currentSlide(2, 1)" data-groupe="1"></span>
-                <span class="selector" onclick="currentSlide(3, 1)" data-groupe="1"></span>
-                <span class="selector" onclick="currentSlide(4, 1)" data-groupe="1"></span>
-                <span class="selector" onclick="currentSlide(5, 1)" data-groupe="1"></span>
+                <span class="selector" onclick="currentSlide(1, 0)" data-groupe="0"></span>
+                <span class="selector" onclick="currentSlide(2, 0)" data-groupe="0"></span>
+                <span class="selector" onclick="currentSlide(3, 0)" data-groupe="0"></span>
+                <span class="selector" onclick="currentSlide(4, 0)" data-groupe="0"></span>
+                <span class="selector" onclick="currentSlide(5, 0)" data-groupe="0"></span>
             </div>
         </div>
 
@@ -89,35 +93,35 @@
         <h2 class="Centrer">Thème 2</h2>
 
         <div class="slide-container">
-            <div class="custom-slider fade" data-groupe="2">
+            <div class="custom-slider fade" data-groupe="1">
                 <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                 <img class="slide-img" src="./Images/Diaporama/charite.png">
             </div>
-            <div class="custom-slider fade" data-groupe="2">
+            <div class="custom-slider fade" data-groupe="1">
                 <div class="slide-text">Nullam luctus aliquam ornare. </div>
                 <img class="slide-img" src="./Images/Diaporama/interieur.png">
             </div>
-            <div class="custom-slider fade" data-groupe="2">
+            <div class="custom-slider fade" data-groupe="1">
                 <div class="slide-text">Praesent lobortis libero sed egestas suscipit.</div>
                 <img class="slide-img" src="./Images/Diaporama/golem.png">
             </div>
-            <div class="custom-slider fade" data-groupe="2">
+            <div class="custom-slider fade" data-groupe="1">
                 <div class="slide-text">Lorem lorem lorem lorem lorem.</div>
                 <img class="slide-img" src="./Images/Diaporama/blondeEtMonsieur.png">
             </div>
-            <div class="custom-slider fade" data-groupe="2">
+            <div class="custom-slider fade" data-groupe="1">
                 <div class="slide-text">Ipsum ipsum issou ipsum.</div>
                 <img class="slide-img" src="./Images/Diaporama/monsieurCapuche.png">
             </div>
-            <a class="prev" onclick="plusSlides(-1, 2)">❮</a>
-            <a class="next" onclick="plusSlides(1 , 2)">❯</a>
+            <a class="prev" onclick="plusSlide(-1, 1)">❮</a>
+            <a class="next" onclick="plusSlide(1 , 1)">❯</a>
 
             <div class="slide-selector">
-                <span class="selector" onclick="currentSlide(1, 2)" data-groupe="2"></span>
-                <span class="selector" onclick="currentSlide(2, 2)" data-groupe="2"></span>
-                <span class="selector" onclick="currentSlide(3, 2)" data-groupe="2"></span>
-                <span class="selector" onclick="currentSlide(4, 2)" data-groupe="2"></span>
-                <span class="selector" onclick="currentSlide(5, 2)" data-groupe="2"></span>
+                <span class="selector" onclick="currentSlide(1, 1)" data-groupe="1"></span>
+                <span class="selector" onclick="currentSlide(2, 1)" data-groupe="1"></span>
+                <span class="selector" onclick="currentSlide(3, 1)" data-groupe="1"></span>
+                <span class="selector" onclick="currentSlide(4, 1)" data-groupe="1"></span>
+                <span class="selector" onclick="currentSlide(5, 1)" data-groupe="1"></span>
             </div>
         </div>
     </body>
