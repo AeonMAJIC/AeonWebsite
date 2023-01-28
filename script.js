@@ -1,7 +1,5 @@
 //Écrit par Florian Boireau
 
-
-//CARROUSSEL
 var aSlideIndex;
 
 /**
@@ -49,8 +47,10 @@ function showSlides(diapositiveNumber, diaporamaNumber)
     selectors[aSlideIndex-1].className += " active";
 }
 
-/** Initialize the size of the bar behind the top bar to avoid image to hide behind it.
-  * Initalize the hyperlink elements in the top bar to match together. */
+/** 
+ * Initialize the size of the bar behind the top bar to avoid image to hide behind it.
+ * Initalize the hyperlink elements in the top bar to match together.
+ */
 function firstBar()
 {
     //Behind top bar
@@ -81,7 +81,9 @@ function firstSelectors(diaporamaNumber)
     showSlides(aSlideIndex, diaporamaNumber);
 }
 
-/** Initialize the size of download button to match together. */
+/** 
+ * Initialize the size of download button to match together.
+ */
 function firstDownloadButtons()
 {
     let arrayBtn = [document.getElementById("btn1"), document.getElementById("btn2"), document.getElementById("btn3")]
@@ -106,7 +108,9 @@ function firstDownloadButtons()
     document.getElementById("btn3").style.height = heightmax + "px";
 }
 
-/**Launch all the elements. */
+/**
+ * Launch all the elements.
+ */
 function firstUpdate()
 {
     firstBar();
