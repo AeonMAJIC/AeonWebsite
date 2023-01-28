@@ -2,18 +2,33 @@
 
 
 //CARROUSSEL
-var slideIndex = 1;
+var aSlideIndex;
 
+/**
+ * Show the next slide.
+ * @param {*} diapositiveNumber The diapositive number to be shown.
+ * @param {*} diaporamaNumber The diaporama (Theme) number.
+ */
 function plusSlides(diapositiveNumber, diaporamaNumber)
 {
-    showSlides(slideIndex += diapositiveNumber, diaporamaNumber);
+    showSlides(aSlideIndex += diapositiveNumber, diaporamaNumber);
 }
 
+/**
+ * Show the current slide and put the number of the slide hit inside the array.
+ * @param {*} diapositiveNumber The diapositive number to be shown.
+ * @param {*} diaporamaNumber The diaporama (Theme) number.
+ */
 function currentSlide(diapositiveNumber, diaporamaNumber)
 {
-    showSlides(slideIndex = diapositiveNumber, diaporamaNumber);
+    showSlides(aSlideIndex = diapositiveNumber, diaporamaNumber);
 }
 
+/**
+ * Show the current slide.
+ * @param {*} diapositiveNumber The diapositive number to be shown.
+ * @param {*} diaporamaNumber The diaporama (Theme) number.
+ */
 function showSlides(diapositiveNumber, diaporamaNumber)
 {
     var i;
@@ -21,32 +36,38 @@ function showSlides(diapositiveNumber, diaporamaNumber)
     var selectors = document.querySelectorAll('.selector[data-groupe="'      + diaporamaNumber + '"]');
 
     if (diapositiveNumber > slides.length)
-        slideIndex = 1
+        aSlideIndex = 1
     if (diapositiveNumber < 1)
-        slideIndex = slides.length
+        aSlideIndex = slides.length
 
     for (i = 0; i < slides.length; i++)
         slides[i].style.display = "none";
     for (i = 0; i < selectors.length; i++)
         selectors[i].className = selectors[i].className.replace(" active", "");
 
-    slides[slideIndex-1].style.display = "block";
-    selectors[slideIndex-1].className += " active";
+    slides[aSlideIndex-1].style.display = "block";
+    selectors[aSlideIndex-1].className += " active";
 }
 
+/** Initialize the size of the bar behind the top bar to avoid image to hide behind it.
+  * Initalize the hyperlink elements in the top bar to match together. */
 function firstBar()
 {
-    //Mise a jour de la taille de la barre derriere la barre du haut pour que rien ne soit caché par celle-ci
+    //Behind top bar
     let barreTopHeight = document.getElementsByClassName("BarreTop")[0].clientHeight;
     document.getElementsByClassName("DerriereBarreTop")[0].style.height = barreTopHeight + "px";
 
-    //Mise a jour de la taille des elements hyperlink vers les ancres pour tous match ensemble
+    //Hyperlink elements
     let hyperTopWidth = document.getElementById("top3").clientWidth;
     document.getElementById("top1").style.width = hyperTopWidth + "px";
     document.getElementById("top2").style.width = hyperTopWidth + "px";
-    document.getElementById("top3").style.width = hyperTopWidth + "px"; //pour une raison inconnu la taille change quand on modifie les deux autres
+    document.getElementById("top3").style.width = hyperTopWidth + "px"; //For an unknown reason, size change when we modify the others
 }
 
+/**
+ * Initialize the images inside the diaporama selectors.
+ * @param {*} diaporamaNumber The diaporama (Theme) number.
+ */
 function firstSelectors(diaporamaNumber)
 {
     var slides    = document.querySelectorAll('.custom-slider[data-groupe="' + diaporamaNumber + '"]');
@@ -57,14 +78,12 @@ function firstSelectors(diaporamaNumber)
         selectors[i].style.backgroundImage = 'url(' + slides[i].querySelector('.slide-img').src + ')';
     }
 
-
-
-    showSlides(slideIndex, diaporamaNumber);
+    showSlides(aSlideIndex, diaporamaNumber);
 }
 
+/** Initialize the size of download button to match together. */
 function firstDownloadButtons()
 {
-    //Mise a jour de la taille des boutons pour tous match ensemble
     let arrayBtn = [document.getElementById("btn1"), document.getElementById("btn2"), document.getElementById("btn3")]
 
     let widthmax  = 0;
@@ -87,15 +106,18 @@ function firstDownloadButtons()
     document.getElementById("btn3").style.height = heightmax + "px";
 }
 
+/**Launch all the elements. */
 function firstUpdate()
 {
     firstBar();
-    firstDownloadButtons();
+
     firstSelectors(1);
     firstSelectors(2);
+
+    firstDownloadButtons();
 }
 
-//Initialisation au prélancement
+//Prelaunch initialization
 window.addEventListener("DOMContentLoaded", function()
 {
     firstUpdate();
