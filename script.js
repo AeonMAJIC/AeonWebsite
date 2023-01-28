@@ -4,25 +4,25 @@
 //CARROUSSEL
 var slideIndex = 1;
 
-function plusSlides(n, m)
+function plusSlides(diapositiveNumber, diaporamaNumber)
 {
-    showSlides(slideIndex += n, m);
+    showSlides(slideIndex += diapositiveNumber, diaporamaNumber);
 }
 
-function currentSlide(n, m)
+function currentSlide(diapositiveNumber, diaporamaNumber)
 {
-    showSlides(slideIndex = n, m);
+    showSlides(slideIndex = diapositiveNumber, diaporamaNumber);
 }
 
-function showSlides(n, m)
+function showSlides(diapositiveNumber, diaporamaNumber)
 {
     var i;
-    var slides    = document.querySelectorAll('.custom-slider[data-groupe="' + m + '"]');
-    var selectors = document.querySelectorAll('.selector[data-groupe="'      + m + '"]');
+    var slides    = document.querySelectorAll('.custom-slider[data-groupe="' + diaporamaNumber + '"]');
+    var selectors = document.querySelectorAll('.selector[data-groupe="'      + diaporamaNumber + '"]');
 
-    if (n > slides.length)
+    if (diapositiveNumber > slides.length)
         slideIndex = 1
-    if (n < 1)
+    if (diapositiveNumber < 1)
         slideIndex = slides.length
 
     for (i = 0; i < slides.length; i++)
@@ -47,9 +47,19 @@ function firstBar()
     document.getElementById("top3").style.width = hyperTopWidth + "px"; //pour une raison inconnu la taille change quand on modifie les deux autres
 }
 
-function firstSelectors()
+function firstSelectors(diaporamaNumber)
 {
+    var slides    = document.querySelectorAll('.custom-slider[data-groupe="' + diaporamaNumber + '"]');
+    var selectors = document.querySelectorAll('.selector[data-groupe="'      + diaporamaNumber + '"]');
 
+    for (var i = 0; i < selectors.length; i++)
+    {
+        selectors[i].style.backgroundImage = 'url(' + slides[i].querySelector('.slide-img').src + ')';
+    }
+
+
+
+    showSlides(slideIndex, diaporamaNumber);
 }
 
 function firstDownloadButtons()
@@ -81,9 +91,8 @@ function firstUpdate()
 {
     firstBar();
     firstDownloadButtons();
-
-    showSlides(slideIndex, 1);
-    showSlides(slideIndex, 2);
+    firstSelectors(1);
+    firstSelectors(2);
 }
 
 //Initialisation au prélancement
