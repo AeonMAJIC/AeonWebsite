@@ -70,8 +70,8 @@ function firstBar()
  */
 function firstSelectors(diaporamaNumber)
 {
-    aSlideIndex[diaporamaNumber] = 1;
-    console.error(diaporamaNumber);
+    aSlideIndex[diaporamaNumber] = 1; //this allow every diapo to get it own slideIndex number to move between diapositive
+
     var slides    = document.querySelectorAll('.custom-slider[data-groupe="' + diaporamaNumber + '"]');
     var selectors = document.querySelectorAll('.selector[data-groupe="'      + diaporamaNumber + '"]');
 
