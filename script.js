@@ -1,4 +1,7 @@
-//Écrit par Florian Boireau
+/*
+    Écrit par Florian Boireau
+    https://github.com/Skulls23
+*/
 
 var aSlideIndex = []; //array of index, every diaporama get a case
 

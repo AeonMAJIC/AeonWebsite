@@ -1,5 +1,7 @@
-/*Écrit par Florian Boireau*/
-
+/*
+    Écrit par Florian Boireau
+    https://github.com/Skulls23
+*/
 *:not(.Clickable)
 {
     cursor: url('./Images/cursor.cur'), auto;
@@ -31,10 +33,16 @@ p
     font-size: 12px;
 }
 
+a
+{
+    color: blue;
+}
+
 a:active
 {
     outline: none;
     text-decoration: none;
+    color: purple;
 }
 
 
@@ -49,8 +57,8 @@ a:active
     top: 2%;
     width: fit-content;
     background-color: #1a1a1a;
-    padding: 0.5vh;
-    border-radius: 10%;
+    padding: 2vh;
+    border-radius: 10px 10px 10px 10px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
@@ -69,12 +77,6 @@ a:active
 .BarreTopTableau
 {
     border-collapse: collapse;
-}
-
-.BarreTopCellule
-{
-    border-right: 4vh solid #1a1a1a;
-    border-left:  4vh solid #1a1a1a;
 }
 
 .ImageAccueil
