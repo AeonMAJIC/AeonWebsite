@@ -56,9 +56,6 @@ function showSlides(diapositiveNumber, diaporamaNumber)
  */
 function firstBar()
 {
-    //Behind top bar
-    let barreTopHeight = document.getElementsByClassName("BarreTop")[0].clientHeight;
-    document.getElementsByClassName("DerriereBarreTop")[0].style.height = barreTopHeight + "px";
 
     //Hyperlink elements
     let hyperTopWidth = document.getElementById("top3").clientWidth;

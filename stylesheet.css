@@ -7,21 +7,15 @@
     cursor: url('./Images/cursor.cur'), auto;
 }
 
-header
-{
-    background: linear-gradient(to bottom, Black, #292a2b);
-}
+ body
+ {
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+    margin-top: 0.1%;
+    margin-bottom: 0.1%;
+    background-color: gold;
 
-footer
-{
-    background: linear-gradient(to bottom, #292a2b, Black);
-}
-
-body
-{
-    background-color: #292a2b;
-    margin: 0px;
-}
+ }
 
 p, h1, h2, h3, h4, h5, h6, tr, td
 {
@@ -62,11 +56,6 @@ a:active
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
-}
-
-.DerriereBarreTop
-{
-    width: 100%;
 }
 
 .TexteBarreTop
@@ -116,6 +105,32 @@ a:active
     height: 100%;
 }
 
+.Fondu0Vers1
+{
+    background: linear-gradient(to bottom, Black, #292a2b);
+}
+
+.Fondu1
+{
+    background-color: #292a2b;
+}
+
+.Fondu1Vers0
+{
+    background: linear-gradient(to bottom, #292a2b, Black);
+}
+
+.Fondu0Vers1, .Fondu1, .Fondu1Vers0
+{
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+}
+
+.PasDespaceDiv
+{
+    font-size: 0;
+}
 
 
 /*TABLEAU*/
