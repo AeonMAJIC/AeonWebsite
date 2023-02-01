@@ -68,6 +68,41 @@ a:active
     border-collapse: collapse;
 }
 
+.SeparateurContainer
+{
+    position: relative;
+    overflow: hidden;
+}
+
+/*.SeparateurContainer
+{
+    
+}*/
+
+.ImageSepareHautGaucheBasDroite
+{
+    height: auto;
+    width: 60%;
+    float: left;
+    -webkit-clip-path: polygon(0% 0%, 100% 100%, 0% 100%, 0% 0%);
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%, 0% 0%);
+}
+
+.ImageSepareBasGaucheHautDroite
+{
+    height: auto;
+    width: 60%;
+    float: right;
+    -webkit-clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.TexteSepare
+{
+    width: 50%;
+    padding: 1em;
+}
+
 .ImageAccueil
 {
     max-height: 100%;
