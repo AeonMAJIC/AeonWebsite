@@ -31,6 +31,12 @@ p
     font-size: 12px;
 }
 
+a:active
+{
+    outline: none;
+    text-decoration: none;
+}
+
 
 
 /*****************/
@@ -40,10 +46,13 @@ p
 .BarreTop
 {
     position: fixed;
-    top: 0;
-    width: 100%;
+    top: 2%;
+    width: fit-content;
     background-color: #1a1a1a;
     padding: 0.5vh;
+    border-radius: 10%;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 999;
 }
 
