@@ -37,9 +37,9 @@ function showSlides(diapositiveNumber, diaporamaNumber)
     var selectors = document.querySelectorAll('.selector[data-groupe="'      + diaporamaNumber + '"]');
 
     if (diapositiveNumber > slides.length)
-        aSlideIndex[diaporamaNumber] = 1
+        aSlideIndex[diaporamaNumber] = 1;
     if (diapositiveNumber < 1)
-        aSlideIndex[diaporamaNumber] = slides.length
+        aSlideIndex[diaporamaNumber] = slides.length;
 
     for (i = 0; i < slides.length; i++)
         slides[i].style.display = "none";
@@ -120,6 +120,7 @@ function firstUpdate()
 
     firstSelectors(0);
     firstSelectors(1);
+    firstSelectors(2);
 
     firstDownloadButtons();
 }

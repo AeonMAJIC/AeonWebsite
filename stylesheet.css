@@ -88,31 +88,11 @@ iframe
     clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);
 }
 
-.ImageSepareBasGaucheHautDroite
-{
-    height: auto;
-    width: 60%;
-    -webkit-clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
-    clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
-}
-
 .TexteSepare
 {
     word-break: break-word;
     line-height: 5vh;
     font-size: 4vh;
-}
-
-.ImageAccueil
-{
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.PremierLore
-{
-    font-size: 20px;
-    text-align: justify;
 }
 
 .PremierLore.Oldenburg, .Oldenburg
