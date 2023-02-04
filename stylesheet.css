@@ -92,6 +92,7 @@ a:active
 
 .TexteSepare
 {
+    word-break: break-word;
     line-height: 5vh;
     font-size: 4vh;
 }
