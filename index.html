@@ -73,7 +73,7 @@
                 <br/><br/><br id="Galerie"/>
                 <h1 class="Centrer">Galerie</h1>
                 <br/><br/>
-                <h2 class="Centrer">Thème 1</h2>
+                <h2 class="Centrer">Personnages</h2>
     
                 <!--If a new slide-container is added, increment his data-groupe (from custom-slider, selector) by 1 (let's call this i)
                     Also, put all the 2nd var of functions (plusSlide, currentSlide) to i
@@ -117,7 +117,7 @@
     
                 <br/><br/><br/><br/><br>
     
-                <h2 class="Centrer">Thème 2</h2>
+                <h2 class="Centrer">Temple</h2>
     
                 <div class="slide-container">
 
@@ -152,6 +152,46 @@
                         <span class="selector" onclick="currentSlide(3, 1)" data-groupe="1"></span>
                         <span class="selector" onclick="currentSlide(4, 1)" data-groupe="1"></span>
                         <span class="selector" onclick="currentSlide(5, 1)" data-groupe="1"></span>
+                    </div>
+                </div>
+
+                <br/><br/><br/><br/><br>
+    
+                <h2 class="Centrer">Concept Arts</h2>
+    
+                <div class="slide-container">
+
+                    <a class="prev" onclick="plusSlide(-1, 2)">❮</a>
+
+                    <table class="slides-table CentrerTableau">
+                        <tr>
+                            <td class="slide-td-border">
+                                <div class="custom-slider fade" data-groupe="2">
+                                    <img class="slide-img" src="./Images/Diaporama/charite.png">
+                                </div>
+                                <div class="custom-slider fade" data-groupe="2">
+                                    <img class="slide-img" src="./Images/Diaporama/interieur.png">
+                                </div>
+                                <div class="custom-slider fade" data-groupe="2">
+                                    <img class="slide-img" src="./Images/Diaporama/golem.png">
+                                </div>
+                                <div class="custom-slider fade" data-groupe="2">
+                                    <img class="slide-img" src="./Images/Diaporama/blondeEtMonsieur.png">
+                                </div>
+                                <div class="custom-slider fade" data-groupe="2">
+                                    <img class="slide-img" src="./Images/Diaporama/monsieurCapuche.png">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <a class="next" onclick="plusSlide(1 , 2)">❯</a>
+
+                    <div class="slide-selector">
+                        <span class="selector" onclick="currentSlide(1, 1)" data-groupe="2"></span>
+                        <span class="selector" onclick="currentSlide(2, 1)" data-groupe="2"></span>
+                        <span class="selector" onclick="currentSlide(3, 1)" data-groupe="2"></span>
+                        <span class="selector" onclick="currentSlide(4, 1)" data-groupe="2"></span>
+                        <span class="selector" onclick="currentSlide(5, 1)" data-groupe="2"></span>
                     </div>
                 </div>
             </div>
