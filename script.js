@@ -58,10 +58,11 @@ function firstBar()
 {
 
     //Hyperlink elements
-    let hyperTopWidth = document.getElementById("top3").clientWidth;
+    let hyperTopWidth = document.getElementById("top4").clientWidth;
     document.getElementById("top1").style.width = hyperTopWidth + "px";
     document.getElementById("top2").style.width = hyperTopWidth + "px";
-    document.getElementById("top3").style.width = hyperTopWidth + "px"; //For an unknown reason, size change when we modify the others
+    document.getElementById("top3").style.width = hyperTopWidth + "px";
+    document.getElementById("top4").style.width = hyperTopWidth + "px"; //For an unknown reason, size change when we modify the others
 }
 
 /**
