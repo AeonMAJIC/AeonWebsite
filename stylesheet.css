@@ -17,7 +17,7 @@
     max-width: 100%;
  }
 
-p, h1, h2, h3, h4, h5, h6, tr, td
+p, span, h1, h2, h3, h4, h5, h6, tr, td
 {
     color:white;
 }
@@ -54,7 +54,7 @@ iframe
 .BarreTop
 {
     position: fixed;
-    top: 2%;
+    top: 2vh;
     width: fit-content;
     background-color: #1a1a1a;
     padding: 2vh;
@@ -82,10 +82,18 @@ iframe
 
 .ImageSepareHautGaucheBasDroite
 {
-    max-height: 80vh;
-    width: auto;
-    -webkit-clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);
+    margin: 10vh 0 2vh 2vh;
+    height: 70vh;
+    width: 50vw;
+    /*-webkit-clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);*/
     clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);
+    background-image: url("./Images/blondeAssise.png");
+    background-size: contain;
+}
+
+.Oldenburg
+{
+    font-family: 'Oldenburg';
 }
 
 .TexteSepare
@@ -95,9 +103,42 @@ iframe
     font-size: 4vh;
 }
 
-.PremierLore.Oldenburg, .Oldenburg
+.SpacingContainer
 {
-    font-family: 'Oldenburg';
+    margin-top: 10vh;
+    margin-left: 2vh;
+    width: 100%;
+}
+
+.Spacing
+{
+    word-break: break-word;
+    float: left;
+    clear: left;
+}
+
+.Spacing:nth-child(1)
+{
+    margin-left: 38vw; /*50vh*70%+2*/
+    width: 59vw;
+}
+
+.Spacing:nth-child(2)
+{
+    margin-left: 42vw;
+    width: 55vw;
+}
+
+.Spacing:nth-child(3)
+{
+    margin-left: 47vw;
+    width: 50vw;
+}
+
+.Spacing:nth-child(4)
+{
+    margin-left: 50vw;
+    width: 47vw;
 }
 
 .CadreImage
