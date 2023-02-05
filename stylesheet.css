@@ -15,8 +15,13 @@
     margin-bottom: 0.1%;
     background-color: gold;
     max-width: 100%;
-    direction: rtl;
+    direction: rtl; /*To place the horizontal bar on left instead of right*/
     overflow-x: hidden;
+ }
+
+ *:not(body)
+ {
+    direction: initial;
  }
 
 p, span, h1, h2, h3, h4, h5, h6, tr, td
@@ -169,7 +174,6 @@ iframe
 .Fondu0Vers1
 {
     background: linear-gradient(to bottom, Black, #292a2b);
-    direction: initial;
     height: 100vh;
 }
 
