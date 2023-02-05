@@ -89,6 +89,7 @@ iframe
     clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);
     background-image: url("./Images/blondeAssise.png");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .Oldenburg
@@ -115,6 +116,7 @@ iframe
     word-break: break-word;
     float: left;
     clear: left;
+    font-size: 4vh;
 }
 
 .Spacing:nth-child(1)
