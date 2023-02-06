@@ -77,9 +77,7 @@ function firstSelectors(diaporamaNumber)
     var selectors = document.querySelectorAll('.selector[data-groupe="'      + diaporamaNumber + '"]');
 
     for (var i = 0; i < selectors.length; i++)
-    {
         selectors[i].style.backgroundImage = 'url(' + slides[i].querySelector('.slide-img').src + ')';
-    }
 
     showSlides(aSlideIndex[diaporamaNumber], diaporamaNumber);
 }
