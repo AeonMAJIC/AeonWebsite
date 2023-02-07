@@ -13,7 +13,6 @@ body
     margin-right: 0%;
     margin-top: 0%;
     margin-bottom: 0%;
-    background-color: gold;
     max-width: 100%;
     direction: rtl; /*To place the horizontal bar on left instead of right*/
     overflow-x: hidden;
@@ -89,7 +88,7 @@ iframe
 
 .ImageSepareHautGaucheBasDroite
 {
-    margin: 10vh 0 2vh 2vh;
+    margin: 0vh 0 2vh 2vh;
     height: 70vh;
     width: 50vw;
     /*-webkit-clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);*/
@@ -180,7 +179,6 @@ iframe
 .Fondu0Vers1
 {
     background: linear-gradient(to bottom, Black, #292a2b);
-    height: 100vh;
 }
 
 .Fondu1
