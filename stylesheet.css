@@ -92,11 +92,11 @@ iframe
 /*********************************************************************/
 
 
-@media only screen and (min-width: 900px)
+@media only screen and (min-width: 1000px)
 {
     .ImageSepareHautGaucheBasDroite
     {
-        margin: 0vh 0 2vh 2vh;
+        margin: 0vh 0vw 2vh 2vw;
         height: 70vh;
         width: 50vw;
         /*-webkit-clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);*/
@@ -148,14 +148,22 @@ iframe
 }
 
 
-@media only screen and (max-width: 900px)
+@media only screen and (max-width: 1000px)
 {
     .ImageSepareHautGaucheBasDroite
     {
-        margin: 0vh 0 2vh 2vh;
-        height: 50vh;
-        width: 50vw;
+        margin: 10vh 2vw 0vh 2vw;
+        height: 40vh;
+        width: 96vw;
         background-image: url("./Images/blondeAssise.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center
+    }
+
+    .SpacingContainer
+    {
+        margin-top: 52vh;
     }
 }
 
