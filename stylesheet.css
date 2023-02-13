@@ -92,10 +92,11 @@ iframe
 /*********************************************************************/
 
 
-@media only screen and (min-width: 1000px)
+@media only screen and (min-width: 1001px) /*LAPTOP*/
 {
     .ImageSepareHautGaucheBasDroite
     {
+        position: absolute;
         margin: 0vh 0vw 2vh 2vw;
         height: 70vh;
         width: 50vw;
@@ -110,7 +111,7 @@ iframe
     .SpacingContainer
     {
         margin-top: 10vh;
-        margin-left: 2vh;
+        margin-left: 3vh;
         width: 100%;
     }
 
@@ -148,7 +149,7 @@ iframe
 }
 
 
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 1000px) /*PHONE*/
 {
     .ImageSepareHautGaucheBasDroite
     {
@@ -163,7 +164,7 @@ iframe
 
     .SpacingContainer
     {
-        margin-top: 52vh;
+        margin-top: 2vh;   
     }
 }
 
@@ -211,6 +212,24 @@ iframe
     width: auto;
 }
 
+@media only screen and (min-width: 1001px) /*LAPTOP*/
+{
+    .Fondu0Vers1, .Fondu1, .Fondu1Vers0
+    {
+        font-size: 16px;
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) /*PHONE*/
+{
+    .Fondu0Vers1, .Fondu1, .Fondu1Vers0
+    {
+        font-size: 16px;
+    }
+}
+
 .Fondu0Vers1
 {
     background: linear-gradient(to bottom, Black, #292a2b);
@@ -226,12 +245,7 @@ iframe
     background: linear-gradient(to bottom, #292a2b, Black);
 }
 
-.Fondu0Vers1, .Fondu1, .Fondu1Vers0
-{
-    font-size: 16px;
-    display: inline-block;
-    width: 100%;
-}
+
 
 .PasDespaceDiv
 {
