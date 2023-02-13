@@ -164,7 +164,8 @@ iframe
 
     .SpacingContainer
     {
-        margin-top: 2vh;   
+        margin-top: 2vh;
+        text-align: center;
     }
 }
 
