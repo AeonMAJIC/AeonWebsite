@@ -86,18 +86,84 @@ iframe
     max-height: 100%;
 }
 
-.ImageSepareHautGaucheBasDroite
+
+/*********************************************************************/
+/* FIRST PICTURE MEDIA QUERY TO GET NORMAL IMAGE ABOVE TEXT ON PHONE */
+/*********************************************************************/
+
+
+@media only screen and (min-width: 900px)
 {
-    margin: 0vh 0 2vh 2vh;
-    height: 70vh;
-    width: 50vw;
-    /*-webkit-clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);*/
-    clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);
-    background-image: url("./Images/blondeAssise.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    .ImageSepareHautGaucheBasDroite
+    {
+        margin: 0vh 0 2vh 2vh;
+        height: 70vh;
+        width: 50vw;
+        /*-webkit-clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);*/
+        clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);
+        background-image: url("./Images/blondeAssise.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .SpacingContainer
+    {
+        margin-top: 10vh;
+        margin-left: 2vh;
+        width: 100%;
+    }
+
+    .Spacing
+    {
+        word-break: break-word;
+        float: left;
+        clear: left;
+        font-size: 4vh;
+    }
+
+    .Spacing:nth-child(1)
+    {
+        margin-left: 38vw; /*50vh*70%+2*/
+        width: 59vw;
+    }
+
+    .Spacing:nth-child(2)
+    {
+        margin-left: 42vw;
+        width: 55vw;
+    }
+
+    .Spacing:nth-child(3)
+    {
+        margin-left: 47vw;
+        width: 50vw;
+    }
+
+    .Spacing:nth-child(4)
+    {
+        margin-left: 50vw;
+        width: 47vw;
+    }
 }
+
+
+@media only screen and (max-width: 900px)
+{
+    .ImageSepareHautGaucheBasDroite
+    {
+        margin: 0vh 0 2vh 2vh;
+        height: 50vh;
+        width: 50vw;
+        background-image: url("./Images/blondeAssise.png");
+    }
+}
+
+
+/*************************************/
+/* END MEDIA QUERY FOR FIRST PICTURE */
+/*************************************/
+
 
 .Oldenburg
 {
@@ -109,45 +175,6 @@ iframe
     word-break: break-word;
     line-height: 5vh;
     font-size: 4vh;
-}
-
-.SpacingContainer
-{
-    margin-top: 10vh;
-    margin-left: 2vh;
-    width: 100%;
-}
-
-.Spacing
-{
-    word-break: break-word;
-    float: left;
-    clear: left;
-    font-size: 4vh;
-}
-
-.Spacing:nth-child(1)
-{
-    margin-left: 38vw; /*50vh*70%+2*/
-    width: 59vw;
-}
-
-.Spacing:nth-child(2)
-{
-    margin-left: 42vw;
-    width: 55vw;
-}
-
-.Spacing:nth-child(3)
-{
-    margin-left: 47vw;
-    width: 50vw;
-}
-
-.Spacing:nth-child(4)
-{
-    margin-left: 50vw;
-    width: 47vw;
 }
 
 .CadreImage
