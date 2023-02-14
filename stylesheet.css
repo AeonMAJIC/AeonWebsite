@@ -287,6 +287,26 @@ iframe
 
 
 
+@media only screen and (min-width: 1001px) /*LAPTOP*/
+{
+    .Logo
+    {
+        width: 2vw;
+        height:2vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) /*PHONE*/
+{
+    .Logo
+    {
+        width: 3vh;
+        height:3vh;
+    }
+}
+
+
+
 /*FIN TABLEAU*/
 
 /*DIAPORAMA*/
