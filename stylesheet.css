@@ -209,8 +209,8 @@ iframe
 
 .YoutubeWindow
 {
-    height: 70vh;
-    width: auto;
+    height: auto;
+    width: 70vw;
 }
 
 @media only screen and (min-width: 1001px) /*LAPTOP*/
