@@ -9,10 +9,10 @@
 
 body
 {
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     max-width: 100%;
     direction: rtl; /*To place the horizontal bar on left instead of right*/
     overflow-x: hidden;
@@ -68,6 +68,12 @@ iframe
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
+}
+
+.BarreTopBack
+{
+    position: relative;
+    height: fit-content;
 }
 
 .TexteBarreTop
@@ -153,9 +159,9 @@ iframe
 {
     .ImageSepareHautGaucheBasDroite
     {
-        margin: 10vh 2vw 0vh 2vw;
+        margin-top: 13vh;
         height: 40vh;
-        width: 96vw;
+        width: 100vw;
         background-image: url("./Images/blondeAssise.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -228,6 +234,7 @@ iframe
     .Fondu0Vers1, .Fondu1, .Fondu1Vers0
     {
         font-size: 16px;
+        display: inline-block;
     }
 }
 
@@ -284,7 +291,6 @@ iframe
 {
     cursor: pointer;
 }
-
 
 
 @media only screen and (min-width: 1001px) /*LAPTOP*/
