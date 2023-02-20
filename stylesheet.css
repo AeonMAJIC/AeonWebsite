@@ -38,30 +38,25 @@ body
     cursor: url('./Images/cursor.cur'), auto;
 }
 
-/******************/
-/* TEXTES DE BASE */
-/******************/
+/**********/
+/* TEXTES */
+/**********/
 
 h1, h2 {
     font-family: Oldenburg;
     text-align: center;
 }
 
-p
-{
-    font-size: 12px;
+h1 {
+    font-size: 35px;
 }
 
-a
-{
-    color: blue;
+h2 {
+    font-size: 27px;
 }
 
-a:active
-{
-    outline: none;
-    text-decoration: none;
-    color: purple;
+a {
+    color: white;
 }
 
 /*********/
@@ -299,6 +294,15 @@ button:hover
 {
     from {opacity: 0}
     to {opacity: 1}
+}
+
+/***********/
+/* CONTACT */
+/***********/
+
+#Contact {
+    width: 100%;
+    text-align: center;
 }
 
 /**********************/
