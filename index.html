@@ -25,18 +25,10 @@
         <table>
             <tbody>
                 <tr>
-                    <td id="top1">
-                        <a href="#Video" class="Clickable">Vidéo</a>
-                    </td>
-                    <td id="top2">
-                        <a href="#Galerie" class="Clickable">Galerie</a>
-                    </td>
-                    <td id="top3">
-                        <a href="#L'equipe" class="Clickable">L'équipe</a>
-                    </td>
-                    <td id="top4">
-                        <a href="#Telecharger" class="Clickable">Télécharger</a>
-                    </td>
+                    <td><a href="#Accueil" class="Clickable">Accueil</a></td>
+                    <td><a href="#Video" class="Clickable">Vidéo</a></td>
+                    <td><a href="#Galerie" class="Clickable">Galerie</a></td>
+                    <td><a href="#Equipe" class="Clickable">L'équipe</a></td>
                 </tr>
             </tbody>
         </table>
@@ -62,17 +54,16 @@
             </div>
         </div>
 
-        <div class="Fondu1">
-            <br id="Video"/>
-            <h1 class="Centrer">Vidéo</h1>
+        <div id="Video">
+            <h1>Vidéo</h1>
             <div class="Centrer">
                 <iframe src="https://www.youtube.com/embed/G1IbRujko-A?autoplay=1&mute=1" title="Aeon gameplay video" class="YoutubeWindow" frameborder="0" allows="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <!--add autoplay=1&mute=1 if you want to play it, chrome block video with music in-->
             </div>
+        </div>
 
-            <br/><br/><br id="Galerie"/>
+        <div id="Galerie">
             <h1 class="Centrer">Galerie</h1>
-            <br/><br/>
             <h2 class="Centrer">Personnages</h2>
 
             <!--If a new slide-container is added, increment his data-groupe (from custom-slider, selector) by 1 (let's call this i)
@@ -198,7 +189,7 @@
             </div>
         </div>
 
-        <div id="L'equipe">
+        <div id="Equipe">
             <h1>L'équipe</h1>
             <table class="TableauEquipe">
                 <tr>

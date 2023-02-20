@@ -50,21 +50,6 @@ function showSlides(diapositiveNumber, diaporamaNumber)
     selectors[aSlideIndex[diaporamaNumber]-1].className += " active";
 }
 
-/** 
- * Initialize the size of the bar behind the top bar to avoid image to hide behind it.
- * Initalize the hyperlink elements in the top bar to match together.
- */
-function firstBar()
-{
-
-    //Hyperlink elements
-    let hyperTopWidth = document.getElementById("top4").clientWidth;
-    document.getElementById("top1").style.width = hyperTopWidth + "px";
-    document.getElementById("top2").style.width = hyperTopWidth + "px";
-    document.getElementById("top3").style.width = hyperTopWidth + "px";
-    document.getElementById("top4").style.width = hyperTopWidth + "px"; //For an unknown reason, size change when we modify the others
-}
-
 /**
  * Initialize the images inside the diaporama selectors.
  * @param {*} diaporamaNumber The diaporama (Theme) number.
@@ -114,8 +99,6 @@ function firstDownloadButtons()
  */
 function firstUpdate()
 {
-    firstBar();
-
     firstSelectors(0);
     firstSelectors(1);
     firstSelectors(2);

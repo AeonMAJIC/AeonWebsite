@@ -116,8 +116,16 @@ button:hover
     font-size: 15px;
 }
 
-.TopBar table {
-    border-collapse: collapse;
+.TopBar td {
+    min-width: 50px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.TopBar a {
+    font-family: Oldenburg;
+    text-decoration: none;
+    color: white;
 }
 
 /***********/
