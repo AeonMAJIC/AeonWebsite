@@ -1,21 +1,22 @@
 /*
     Écrit par Florian Boireau
     https://github.com/Skulls23
+    Maintenu par Arnaud Lysensoone Bijou
+    https://github.com/NymePse
 */
-*:not(.Clickable)
-{
-    cursor: url('./Images/cursor.cur'), auto;
-}
+
+/********/
+/* BODY */
+/********/
 
 body
 {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: 100%;
+    margin: 0;
+    max-width: 100vw;
     direction: rtl; /*To place the horizontal bar on left instead of right*/
     overflow-x: hidden;
+    background: linear-gradient(to bottom, Black, #292a2b, Black);
+    color: white;
 }
 
 *:not(body)
@@ -23,9 +24,27 @@ body
     direction: initial;
 }
 
-p, span, h1, h2, h3, h4, h5, h6, tr, td
+/***********/
+/* CURSEUR */
+/***********/
+
+.Clickable
 {
-    color:white;
+    cursor: pointer;
+}
+
+*:not(.Clickable)
+{
+    cursor: url('./Images/cursor.cur'), auto;
+}
+
+/******************/
+/* TEXTES DE BASE */
+/******************/
+
+h1, h2 {
+    font-family: Oldenburg;
+    text-align: center;
 }
 
 p
@@ -45,231 +64,112 @@ a:active
     color: purple;
 }
 
+/*********/
+/* VIDEO */
+/*********/
+
 iframe
 { 
     width: 85%;
     aspect-ratio: 16 / 9;
 }
 
+/********/
+/*BOUTON*/
+/********/
 
+.CenterButton {
+    width: 100%;
+    text-align: center;
+}
 
-/*****************/
-/*    CLASSES    */
-/*****************/
+button
+{
+    background-color: DodgerBlue;
+    border: none;
+    border-radius: 3vh;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
 
-.BarreTop
+button:hover
+{
+    background-color: navy;
+}
+
+/***********/
+/* TOP BAR */
+/***********/
+
+.TopBar
 {
     position: fixed;
     top: 2vh;
     width: fit-content;
     background-color: #1a1a1a;
     padding: 2vh;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
-}
-
-.BarreTopBack
-{
-    position: relative;
-    height: fit-content;
-}
-
-.TexteBarreTop
-{
     font-size: 15px;
 }
 
-.BarreTopTableau
-{
+.TopBar table {
     border-collapse: collapse;
 }
 
-.SeparateurContainer
-{
-    max-width: 100%;
-    max-height: 100%;
-}
+/***********/
+/* ACCUEIL */
+/***********/
 
-
-/*********************************************************************/
-/* FIRST PICTURE MEDIA QUERY TO GET NORMAL IMAGE ABOVE TEXT ON PHONE */
-/*********************************************************************/
-
-
-@media only screen and (min-width: 1001px) /*LAPTOP*/
-{
-    .ImageSepareHautGaucheBasDroite
-    {
-        position: absolute;
-        margin: 0vh 0vw 2vh 2vw;
-        height: 70vh;
-        width: 50vw;
-        /*-webkit-clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);*/
-        clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);
-        background-image: url("./Images/blondeAssise.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .SpacingContainer
-    {
-        margin-top: 10vh;
-        margin-left: 3vh;
-        width: 100%;
-    }
-
-    .Spacing
-    {
-        word-break: break-word;
-        float: left;
-        clear: left;
-        font-size: 4vh;
-    }
-
-    .Spacing:nth-child(1)
-    {
-        margin-left: 38vw; /*50vh*70%+2*/
-        width: 59vw;
-    }
-
-    .Spacing:nth-child(2)
-    {
-        margin-left: 42vw;
-        width: 55vw;
-    }
-
-    .Spacing:nth-child(3)
-    {
-        margin-left: 47vw;
-        width: 50vw;
-    }
-
-    .Spacing:nth-child(4)
-    {
-        margin-left: 50vw;
-        width: 47vw;
-    }
-}
-
-
-@media only screen and (max-width: 1000px) /*PHONE*/
-{
-    .ImageSepareHautGaucheBasDroite
-    {
-        margin-top: 13vh;
-        height: 40vh;
-        width: 100vw;
-        background-image: url("./Images/blondeAssise.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center
-    }
-
-    .SpacingContainer
-    {
-        margin: 3vh 2vw 0vh 2vw;
-        text-align: center;
-    }
-}
-
-
-/*************************************/
-/* END MEDIA QUERY FOR FIRST PICTURE */
-/*************************************/
-
-
-.Oldenburg
-{
+#Accueil {
     font-family: 'Oldenburg';
+    margin-top: 10vh;
 }
 
-.TexteSepare
-{
-    word-break: break-word;
-    line-height: 5vh;
-    font-size: 4vh;
+#Accueil p {
+    font-size: 4vw;
 }
 
-.CadreImage
-{
+#ImageAccueil {
+    height: 100vw;
+    width: 100vw;
+}
+
+/**********/
+/* EQUIPE */
+/**********/
+
+.TableauEquipe {
+    text-align: center;
+    margin: 0 auto 10px;
+}
+
+.TableauEquipe td {
+    width: 20vw;
+}
+
+.PhotoEquipe {
+    border-radius: 50%;
+    width: 9vw;
+    height: 9vw;
     border: 1px solid;
     border-color: #bf9d37;
 }
 
-.ImageRonde
+.Logo
 {
-    border-radius: 50%;
-    width: 9vw;
-    height: 9vw;
-}
-
-.FullSize
-{
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-}
-
-@media only screen and (min-width: 1001px) /*LAPTOP*/
-{
-    .Fondu0Vers1, .Fondu1, .Fondu1Vers0
-    {
-        font-size: 16px;
-        display: inline-block;
-        width: 100%;
-    }
-
-    .YoutubeWindow
-    {
-        height: auto;
-        width: 70vw;
-    }
-}
-
-@media only screen and (max-width: 1000px) /*PHONE*/
-{
-    .Fondu0Vers1, .Fondu1, .Fondu1Vers0
-    {
-        font-size: 16px;
-        display: inline-block;
-    }
-    .YoutubeWindow
-    {
-        height: auto;
-        width: 95vw;
-    }
-}
-
-.Fondu0Vers1
-{
-    background: linear-gradient(to bottom, Black, #292a2b);
-}
-
-.Fondu1
-{
-    background-color: #292a2b;
-}
-
-.Fondu1Vers0
-{
-    background: linear-gradient(to bottom, #292a2b, Black);
+    width: 3vh;
+    height:3vh;
 }
 
 
 
-.PasDespaceDiv
-{
-    font-size: 0;
-    width: 100%;
-}
-
-
-/*TABLEAU*/
-
-
+/***********/
+/* TABLEAU */
+/***********/
 
 .Tableau, .Centrer
 {
@@ -292,37 +192,15 @@ iframe
     margin-right: auto;
 }
 
-.Clickable
+/***********/
+/* GALERIE */
+/***********/
+
+.YoutubeWindow
 {
-    cursor: pointer;
+    height: auto;
+    width: 95vw;
 }
-
-
-@media only screen and (min-width: 1001px) /*LAPTOP*/
-{
-    .Logo
-    {
-        width: 2vw;
-        height:2vw;
-    }
-}
-
-@media only screen and (max-width: 1000px) /*PHONE*/
-{
-    .Logo
-    {
-        width: 3vh;
-        height:3vh;
-    }
-}
-
-
-
-/*FIN TABLEAU*/
-
-/*DIAPORAMA*/
-
-
 
 .custom-slider { display: none; }
 
@@ -415,25 +293,32 @@ iframe
     to {opacity: 1}
 }
 
+/**********************/
+/* REGLES ECRAN LARGE */
+/**********************/
 
-/*FIN DIAPORAMA*/
-
-/*BOUTON*/
-
-/* Style buttons */
-.btn
+@media only screen and (min-width: 1001px)
 {
-    background-color: DodgerBlue;
-    border: none;
-    border-radius: 3vh;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
-}
+    #Accueil {
+        height: 90vh;
+    }
 
-.btn:hover
-{
-    background-color: navy;
-}
+    #ImageAccueil
+    {
+        height: 90vh;
+        width: 90vh;
+        float: left;
+        clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);
+        shape-outside: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);
+    }
 
-/*FIN BOUTON*/
+    #Accueil p {
+        font-size: 4vh;
+    }
+
+    .YoutubeWindow
+    {
+        height: auto;
+        width: 70vw;
+    }
+}

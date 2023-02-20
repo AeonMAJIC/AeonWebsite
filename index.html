@@ -21,506 +21,282 @@
         <meta name="HandheldFriendly" content="true">
     </head>
 
-    <header>
-        <div class="BarreTopBack">
-            <div class="BarreTop">
-                <table class="CentrerTableau BarreTopTableau">
-                    <tbody>
-                        <tr>
-                            <td id="top1">
-                                <a href="#Video" class="TexteBarreTop Clickable">Vidéo</a>
-                            </td>
-                            <td id="top2">
-                                <a href="#Galerie" class="TexteBarreTop Clickable">Galerie</a>
-                            </td>
-                            <td id="top3">
-                                <a href="#L'equipe" class="TexteBarreTop Clickable">L'équipe</a>
-                            </td>
-                            <td id="top4">
-                                <a href="#Telecharger" class="TexteBarreTop Clickable">Télécharger</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    <header class="TopBar">
+        <table>
+            <tbody>
+                <tr>
+                    <td id="top1">
+                        <a href="#Video" class="Clickable">Vidéo</a>
+                    </td>
+                    <td id="top2">
+                        <a href="#Galerie" class="Clickable">Galerie</a>
+                    </td>
+                    <td id="top3">
+                        <a href="#L'equipe" class="Clickable">L'équipe</a>
+                    </td>
+                    <td id="top4">
+                        <a href="#Telecharger" class="Clickable">Télécharger</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </header>
 
     <body>
-        <div class="PasDespaceDiv">
-            <div class="Fondu0Vers1">
-                <div>
-                    <div class="ImageSepareHautGaucheBasDroite" alt="Aeon Logo"></div>
-                    <div class="SpacingContainer">
-                        <span class="TexteSepare Oldenburg Spacing">Découvrez Aeon, explorez le Temple et percez ses mystères.<br/><br/><br/></span>
-                        <span class="TexteSepare Oldenburg Spacing">Aeon est un jeu d'action-aventure à la troisième personne dans lequel vous incarnez Lily,</span>
-                        <span class="TexteSepare Oldenburg Spacing">jeune femme à la recherche de son frère jumeau disparu alors qu'il explorait un mystérieux Temple apparu de nulle part, guidée par une voix mystérieuse.<br/><br/><br/></span>
-                        <span class="TexteSepare Oldenburg Spacing">Saurez-vous parvenir à bout des énigmes du Temple, et survivrez vous à ses pièges ?</span>
-                    </div>
-                </div>
-                <br/><br/>
-                <div class="Centrer">
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="FullSize">
-                        <button class="btn">Télécharger</button>
+        <div id="Accueil">
+            <img src="./Images/blondeAssise.png" alt="Rendu 3D du personnage principal, Lily, assise sur un coffre, un bouclier à ses pieds" id="ImageAccueil">
+            <div id="AccueilTextes">
+                <h1>
+                    Découvrez Aeon, explorez le Temple et percez ses mystères.
+                </h1>
+                <p>
+                    Aeon est un jeu d'action-aventure à la troisième personne dans lequel vous incarnez Lily,
+                    jeune femme à la recherche de son frère jumeau disparu alors qu'il explorait un mystérieux Temple apparu de nulle part, guidée par une voix mystérieuse
+                    Saurez-vous parvenir à bout des énigmes du Temple, et survivrez vous à ses pièges ?
+                </p>
+                <div class="CenterButton">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <button class="Clickable">Télécharger</button>
                     </a>
                 </div>
             </div>
+        </div>
 
-            <div class="Fondu1">
-                <br id="Video"/>
-                <h1 class="Centrer">Vidéo</h1>
-                <div class="Centrer">
-                    <iframe src="https://www.youtube.com/embed/G1IbRujko-A?autoplay=1&mute=1" title="Aeon gameplay video" class="YoutubeWindow" frameborder="0" allows="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <!--add autoplay=1&mute=1 if you want to play it, chrome block video with music in-->
-                </div>
+        <div class="Fondu1">
+            <br id="Video"/>
+            <h1 class="Centrer">Vidéo</h1>
+            <div class="Centrer">
+                <iframe src="https://www.youtube.com/embed/G1IbRujko-A?autoplay=1&mute=1" title="Aeon gameplay video" class="YoutubeWindow" frameborder="0" allows="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!--add autoplay=1&mute=1 if you want to play it, chrome block video with music in-->
+            </div>
 
-                <br/><br/><br id="Galerie"/>
-                <h1 class="Centrer">Galerie</h1>
-                <br/><br/>
-                <h2 class="Centrer">Personnages</h2>
-    
-                <!--If a new slide-container is added, increment his data-groupe (from custom-slider, selector) by 1 (let's call this i)
-                    Also, put all the 2nd var of functions (plusSlide, currentSlide) to i
-                    Then add firstSelectors(i); in firstUpdate() in the script.js-->
-                    
-                <div class="slide-container">
+            <br/><br/><br id="Galerie"/>
+            <h1 class="Centrer">Galerie</h1>
+            <br/><br/>
+            <h2 class="Centrer">Personnages</h2>
 
-                    <a class="prev" onclick="plusSlide(-1, 0)">❮</a>
+            <!--If a new slide-container is added, increment his data-groupe (from custom-slider, selector) by 1 (let's call this i)
+                Also, put all the 2nd var of functions (plusSlide, currentSlide) to i
+                Then add firstSelectors(i); in firstUpdate() in the script.js-->
+                
+            <div class="slide-container">
 
-                    <table class="slides-table CentrerTableau">
-                        <tr>
-                            <td class="slide-td-border">
-                                <div class="custom-slider fade" data-groupe="0">
-                                    <img class="slide-img" src="./Images/Diaporama/charite.png">
-                                </div>
-                                <div class="custom-slider fade" data-groupe="0">
-                                    <img class="slide-img" src="./Images/Diaporama/interieur.png">
-                                </div>
-                                <div class="custom-slider fade" data-groupe="0">
-                                    <img class="slide-img" src="./Images/Diaporama/golem.png">
-                                </div>
-                                <div class="custom-slider fade" data-groupe="0">
-                                    <img class="slide-img" src="./Images/Diaporama/blondeEtMonsieur.png">
-                                </div>
-                                <div class="custom-slider fade" data-groupe="0">
-                                    <img class="slide-img" src="./Images/Diaporama/monsieurCapuche.png">
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
+                <a class="prev" onclick="plusSlide(-1, 0)">❮</a>
 
-                    <a class="next" onclick="plusSlide(1 , 0)">❯</a>
+                <table class="slides-table CentrerTableau">
+                    <tr>
+                        <td class="slide-td-border">
+                            <div class="custom-slider fade" data-groupe="0">
+                                <img class="slide-img" src="./Images/Diaporama/charite.png">
+                            </div>
+                            <div class="custom-slider fade" data-groupe="0">
+                                <img class="slide-img" src="./Images/Diaporama/interieur.png">
+                            </div>
+                            <div class="custom-slider fade" data-groupe="0">
+                                <img class="slide-img" src="./Images/Diaporama/golem.png">
+                            </div>
+                            <div class="custom-slider fade" data-groupe="0">
+                                <img class="slide-img" src="./Images/Diaporama/blondeEtMonsieur.png">
+                            </div>
+                            <div class="custom-slider fade" data-groupe="0">
+                                <img class="slide-img" src="./Images/Diaporama/monsieurCapuche.png">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
 
-                    <div class="slide-selector">
-                        <span class="selector" onclick="currentSlide(1, 0)" data-groupe="0"></span>
-                        <span class="selector" onclick="currentSlide(2, 0)" data-groupe="0"></span>
-                        <span class="selector" onclick="currentSlide(3, 0)" data-groupe="0"></span>
-                        <span class="selector" onclick="currentSlide(4, 0)" data-groupe="0"></span>
-                        <span class="selector" onclick="currentSlide(5, 0)" data-groupe="0"></span>
-                    </div>
-                </div>
-    
-                <br/><br/><br/><br/><br>
-    
-                <h2 class="Centrer">Temple</h2>
-    
-                <div class="slide-container">
+                <a class="next" onclick="plusSlide(1 , 0)">❯</a>
 
-                    <a class="prev" onclick="plusSlide(-1, 1)">❮</a>
-
-                    <table class="slides-table CentrerTableau">
-                        <tr>
-                            <td class="slide-td-border">
-                                <div class="custom-slider fade" data-groupe="1">
-                                    <img class="slide-img" src="./Images/Diaporama/charite.png">
-                                </div>
-                                <div class="custom-slider fade" data-groupe="1">
-                                    <img class="slide-img" src="./Images/Diaporama/interieur.png">
-                                </div>
-                                <div class="custom-slider fade" data-groupe="1">
-                                    <img class="slide-img" src="./Images/Diaporama/golem.png">
-                                </div>
-                                <div class="custom-slider fade" data-groupe="1">
-                                    <img class="slide-img" src="./Images/Diaporama/blondeEtMonsieur.png">
-                                </div>
-                                <div class="custom-slider fade" data-groupe="1">
-                                    <img class="slide-img" src="./Images/Diaporama/monsieurCapuche.png">
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                    
-                    <a class="next" onclick="plusSlide(1 , 1)">❯</a>
-
-                    <div class="slide-selector">
-                        <span class="selector" onclick="currentSlide(1, 1)" data-groupe="1"></span>
-                        <span class="selector" onclick="currentSlide(2, 1)" data-groupe="1"></span>
-                        <span class="selector" onclick="currentSlide(3, 1)" data-groupe="1"></span>
-                        <span class="selector" onclick="currentSlide(4, 1)" data-groupe="1"></span>
-                        <span class="selector" onclick="currentSlide(5, 1)" data-groupe="1"></span>
-                    </div>
-                </div>
-
-                <br/><br/><br/><br/><br>
-    
-                <h2 class="Centrer">Concept Arts</h2>
-    
-                <div class="slide-container">
-
-                    <a class="prev" onclick="plusSlide(-1, 2)">❮</a>
-
-                    <table class="slides-table CentrerTableau">
-                        <tr>
-                            <td class="slide-td-border">
-                                <div class="custom-slider fade" data-groupe="2">
-                                    <img class="slide-img" src="./Images/Diaporama/charite.png">
-                                </div>
-                                <div class="custom-slider fade" data-groupe="2">
-                                    <img class="slide-img" src="./Images/Diaporama/interieur.png">
-                                </div>
-                                <div class="custom-slider fade" data-groupe="2">
-                                    <img class="slide-img" src="./Images/Diaporama/golem.png">
-                                </div>
-                                <div class="custom-slider fade" data-groupe="2">
-                                    <img class="slide-img" src="./Images/Diaporama/blondeEtMonsieur.png">
-                                </div>
-                                <div class="custom-slider fade" data-groupe="2">
-                                    <img class="slide-img" src="./Images/Diaporama/monsieurCapuche.png">
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                    <a class="next" onclick="plusSlide(1 , 2)">❯</a>
-
-                    <div class="slide-selector">
-                        <span class="selector" onclick="currentSlide(1, 2)" data-groupe="2"></span>
-                        <span class="selector" onclick="currentSlide(2, 2)" data-groupe="2"></span>
-                        <span class="selector" onclick="currentSlide(3, 2)" data-groupe="2"></span>
-                        <span class="selector" onclick="currentSlide(4, 2)" data-groupe="2"></span>
-                        <span class="selector" onclick="currentSlide(5, 2)" data-groupe="2"></span>
-                    </div>
+                <div class="slide-selector">
+                    <span class="selector" onclick="currentSlide(1, 0)" data-groupe="0"></span>
+                    <span class="selector" onclick="currentSlide(2, 0)" data-groupe="0"></span>
+                    <span class="selector" onclick="currentSlide(3, 0)" data-groupe="0"></span>
+                    <span class="selector" onclick="currentSlide(4, 0)" data-groupe="0"></span>
+                    <span class="selector" onclick="currentSlide(5, 0)" data-groupe="0"></span>
                 </div>
             </div>
-    
-            <div class="Fondu1Vers0">
-                <br/><br/><br id="L'equipe"/>
-                <div style="text-align:center">
-                    <h1 class="Oldenburg">L'équipe</h1>
-                    <br/>
+
+            <br/><br/><br/><br/><br>
+
+            <h2 class="Centrer">Temple</h2>
+
+            <div class="slide-container">
+
+                <a class="prev" onclick="plusSlide(-1, 1)">❮</a>
+
+                <table class="slides-table CentrerTableau">
+                    <tr>
+                        <td class="slide-td-border">
+                            <div class="custom-slider fade" data-groupe="1">
+                                <img class="slide-img" src="./Images/Diaporama/charite.png">
+                            </div>
+                            <div class="custom-slider fade" data-groupe="1">
+                                <img class="slide-img" src="./Images/Diaporama/interieur.png">
+                            </div>
+                            <div class="custom-slider fade" data-groupe="1">
+                                <img class="slide-img" src="./Images/Diaporama/golem.png">
+                            </div>
+                            <div class="custom-slider fade" data-groupe="1">
+                                <img class="slide-img" src="./Images/Diaporama/blondeEtMonsieur.png">
+                            </div>
+                            <div class="custom-slider fade" data-groupe="1">
+                                <img class="slide-img" src="./Images/Diaporama/monsieurCapuche.png">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
                 
-                    <table class="CentrerTableau">
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img src="./Images/Membres/Quentin.jpg" alt="Quentin" class="ImageRonde"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Nom">
-                                            Quentin<br/>
-                                            Garnier<br/><br/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Role">
-                                            <tr>
-                                                <td>Project Owner<br/></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Narrative Designer<br/></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Level Designer<br/></td>
-                                            </tr>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <table class="CentrerTableau">
-                                                <tr>
-                                                    <td>
-                                                        <p><a href="https://github.com/QuentinGarnier "><img src="./Images/Icons/Github_icon.png" class="Clickable Logo"></a></p>
-                                                    </td>
-                                                    <td>
-                                                        <p><a href="https://www.instagram.com/qgarnier5/ "><img src="./Images/Icons/Instagram_icon.png" class="Clickable Logo"></a></p>
-                                                    </td>
-                                                    <td>
-                                                        <p><a href="https://www.linkedin.com/in/quentin-garnier-98bba222b/"><img src="./Images/Icons/Linkedin_icon.png" class="Clickable Logo"></a></p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img src="./Images/Membres/Brice.jpg" alt="Brice" class="ImageRonde"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Nom">
-                                            Brice<br/>
-                                            Graulier<br/><br/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Role">
-                                            <tr>
-                                                <td>Scrum Master<br/></td>
-                                            </tr>
-                                            <tr>
-                                                <td><br/></td>
-                                            </tr>
-                                            <tr>
-                                                <td><br/></td>
-                                            </tr>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <table class="CentrerTableau">
-                                                <tr>
-                                                    <td>
-                                                        <p><a href="https://www.linkedin.com/in/brice-graulier-148832134/"><img src="./Images/Icons/Linkedin_icon.png" class="Clickable Logo"></a></p>
-                                                    </td>
-                                                    <td>
-                                                        <p><a href="https://github.com/GraulierBrice"><img src="./Images/Icons/Github_icon.png" class="Clickable Logo"></a></p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img src="./Images/Membres/Melanie.jpg" alt="Mélanie" class="ImageRonde"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Nom">
-                                            Mélanie<br/>
-                                            Gallardo<br/><br/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Role">
-                                            <tr>
-                                                <td>Artiste 3D<br/></td>
-                                            </tr>
-                                            <tr>
-                                                <td><br/></td>
-                                            </tr>
-                                            <tr>
-                                                <td><br/></td>
-                                            </tr>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <table class="CentrerTableau">
-                                                <tr>
-                                                    <td>
-                                                        <p><a href="https://www.artstation.com/melaniegallardo"><img src="./Images/Icons/Artstation_icon.png" class="Clickable Logo"></a></p>
-                                                    </td>
-                                                    <td>
-                                                        <p><a href="https://www.instagram.com/kliv3r77/"><img src="./Images/Icons/Instagram_icon.png" class="Clickable Logo"></a></p>
-                                                    </td>
-                                                    <td>
-                                                        <p><a href="https://www.linkedin.com/in/m%C3%A9lanie-gallardo-3259641b7/"><img src="./Images/Icons/Linkedin_icon.png" class="Clickable Logo"></a></p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img src="./Images/Membres/Thomas.jpg" alt="Thomas" class="ImageRonde"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Nom">
-                                            Thomas<br/>
-                                            Sarroche<br/><br/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Role">
-                                            Directeur Artistique<br/><br/>
-                                            Artiste 3D<br/><br/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <table class="CentrerTableau">
-                                                <tr>
-                                                    <td>
-                                                        <p><a href="https://www.artstation.com/thomassarroche"><img src="./Images/Icons/Artstation_icon.png" class="Clickable Logo"></a></p>
-                                                    </td>
-                                                    <td>
-                                                        <p><a href="https://www.linkedin.com/in/thomas-sarroche-896519179/"><img src="./Images/Icons/Linkedin_icon.png" class="Clickable Logo"></a></p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <br/><br/><br/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img src="./Images/Membres/Arnaud.jpg" alt="Arnaud" class="ImageRonde"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Nom">
-                                            Arnaud<br/>
-                                            Lysensoone
-                                            Bijou<br/><br/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Role">
-                                            <br/>Narrative Designer<br/><br/><br/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <table class="CentrerTableau">
-                                                <tr>
-                                                    <td>
-                                                        <p><a href="https://github.com/NymePse"><img src="./Images/Icons/Github_icon.png" class="Clickable Logo"></a></p>
-                                                    </td>
-                                                    <td>
-                                                        <p><a href="http://alysbi.fr/"><img src="./Images/Icons/Website_icon.png" class="Clickable Logo"></a></p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img src="./Images/Membres/Mickael.jpg" alt="Mickael" class="ImageRonde"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Nom">
-                                            Mickael<br/>
-                                            Bienaime<br/><br/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Role">
-                                            Artiste 3D<br/><br/>
-                                            Artiste 2D<br/><br/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <table class="CentrerTableau">
-                                                <tr>
-                                                    <td>
-                                                        <p>null</p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img src="./Images/Membres/Clemence.jpg" alt="Clémence" class="ImageRonde"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Nom">
-                                            Clémence<br/>
-                                            Hartmann<br/><br/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Role">
-                                            <br/>Artiste 2D<br/><br/><br/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <table class="CentrerTableau">
-                                                <tr>
-                                                    <td>
-                                                        <p><a href="https://www.instagram.com/hyliss_erj/"><img src="./Images/Icons/Instagram_icon.png" class="Clickable Logo"></a></p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img src="./Images/Membres/Adil.jpg" alt="Adil" class="ImageRonde"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Nom">
-                                            Adil<br/>
-                                            Chaouch<br/><br/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="Tableau Role">
-                                            <br/>Lead Developer<br/><br/><br/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <table class="CentrerTableau">
-                                                <tr>
-                                                    <td>
-                                                        <p>null</p>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
+                <a class="next" onclick="plusSlide(1 , 1)">❯</a>
+
+                <div class="slide-selector">
+                    <span class="selector" onclick="currentSlide(1, 1)" data-groupe="1"></span>
+                    <span class="selector" onclick="currentSlide(2, 1)" data-groupe="1"></span>
+                    <span class="selector" onclick="currentSlide(3, 1)" data-groupe="1"></span>
+                    <span class="selector" onclick="currentSlide(4, 1)" data-groupe="1"></span>
+                    <span class="selector" onclick="currentSlide(5, 1)" data-groupe="1"></span>
                 </div>
-    
-                <br/><br/>
-                <p class="Centrer" style="font-size:25px">contact : <a href="mailto: aeon.jeu@gmail.com">aeon.jeu@gmail.com</a></p>
-                <br/><br/>
+            </div>
+
+            <br/><br/><br/><br/><br>
+
+            <h2 class="Centrer">Concept Arts</h2>
+
+            <div class="slide-container">
+
+                <a class="prev" onclick="plusSlide(-1, 2)">❮</a>
+
+                <table class="slides-table CentrerTableau">
+                    <tr>
+                        <td class="slide-td-border">
+                            <div class="custom-slider fade" data-groupe="2">
+                                <img class="slide-img" src="./Images/Diaporama/charite.png">
+                            </div>
+                            <div class="custom-slider fade" data-groupe="2">
+                                <img class="slide-img" src="./Images/Diaporama/interieur.png">
+                            </div>
+                            <div class="custom-slider fade" data-groupe="2">
+                                <img class="slide-img" src="./Images/Diaporama/golem.png">
+                            </div>
+                            <div class="custom-slider fade" data-groupe="2">
+                                <img class="slide-img" src="./Images/Diaporama/blondeEtMonsieur.png">
+                            </div>
+                            <div class="custom-slider fade" data-groupe="2">
+                                <img class="slide-img" src="./Images/Diaporama/monsieurCapuche.png">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <a class="next" onclick="plusSlide(1 , 2)">❯</a>
+
+                <div class="slide-selector">
+                    <span class="selector" onclick="currentSlide(1, 2)" data-groupe="2"></span>
+                    <span class="selector" onclick="currentSlide(2, 2)" data-groupe="2"></span>
+                    <span class="selector" onclick="currentSlide(3, 2)" data-groupe="2"></span>
+                    <span class="selector" onclick="currentSlide(4, 2)" data-groupe="2"></span>
+                    <span class="selector" onclick="currentSlide(5, 2)" data-groupe="2"></span>
+                </div>
             </div>
         </div>
+
+        <div id="L'equipe">
+            <h1>L'équipe</h1>
+            <table class="TableauEquipe">
+                <tr>
+                    <td><img src="./Images/Membres/Quentin.jpg" alt="Quentin" class="PhotoEquipe"/></td>
+                    <td><img src="./Images/Membres/Brice.jpg" alt="Brice" class="PhotoEquipe"/></td>
+                    <td><img src="./Images/Membres/Melanie.jpg" alt="Mélanie" class="PhotoEquipe"/></td>
+                    <td><img src="./Images/Membres/Thomas.jpg" alt="Thomas" class="PhotoEquipe"/></td>
+                </tr>
+                <tr>
+                    <td>Quentin<br>Garnier</td>
+                    <td>Brice<br>Graulier</td>
+                    <td>Mélanie<br>Gallardo</td>
+                    <td>Thomas<br>Sarroche</td>
+                </tr>
+                <tr>
+                    <td>
+                        Project Owner<br>
+                        Narrative Designer<br>
+                        Level Designer
+                    </td>
+                    <td>
+                        Scrum Master<br>
+                        Developpeur
+                    </td>
+                    <td>
+                        Artiste 3D
+                    </td>
+                    <td>
+                        Directeur Artistique<br>
+                        Artiste 3D
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://github.com/QuentinGarnier "><img src="./Images/Icons/Github_icon.png" class="Clickable Logo"></a>
+                        <a href="https://www.instagram.com/qgarnier5/ "><img src="./Images/Icons/Instagram_icon.png" class="Clickable Logo"></a>
+                        <a href="https://www.linkedin.com/in/quentin-garnier-98bba222b/"><img src="./Images/Icons/Linkedin_icon.png" class="Clickable Logo"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.linkedin.com/in/brice-graulier-148832134/"><img src="./Images/Icons/Linkedin_icon.png" class="Clickable Logo"></a>
+                        <a href="https://github.com/GraulierBrice"><img src="./Images/Icons/Github_icon.png" class="Clickable Logo"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.artstation.com/melaniegallardo"><img src="./Images/Icons/Artstation_icon.png" class="Clickable Logo"></a>
+                        <a href="https://www.instagram.com/kliv3r77/"><img src="./Images/Icons/Instagram_icon.png" class="Clickable Logo"></a>
+                        <a href="https://www.linkedin.com/in/m%C3%A9lanie-gallardo-3259641b7/"><img src="./Images/Icons/Linkedin_icon.png" class="Clickable Logo"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.artstation.com/thomassarroche"><img src="./Images/Icons/Artstation_icon.png" class="Clickable Logo"></a>
+                        <a href="https://www.linkedin.com/in/thomas-sarroche-896519179/"><img src="./Images/Icons/Linkedin_icon.png" class="Clickable Logo"></a>
+                    </td>
+                </tr>
+            </table>
+            <table class="TableauEquipe">
+                <tr>
+                    <td><img src="./Images/Membres/Arnaud.jpg" alt="Arnaud" class="PhotoEquipe"/></td>
+                    <td><img src="./Images/Membres/Mickael.jpg" alt="Mickael" class="PhotoEquipe"/></td>
+                    <td><img src="./Images/Membres/Clemence.jpg" alt="Clémence" class="PhotoEquipe"/></td>
+                    <td><img src="./Images/Membres/Adil.jpg" alt="Adil" class="PhotoEquipe"/></td>
+                </tr>
+                <tr>
+                    <td>Arnaud<br>Lysensoone--Bijou</td>
+                    <td>Mickael<br>Bienaime</td>
+                    <td>Clémence<br>Hartmann</td>
+                    <td>Adil<br>Chaouch</td>
+                </tr>
+                <tr>
+                    <td>
+                        Narrative Designer<br>
+                        Community Manager
+                    </td>
+                    <td>
+                        Artiste 3D<br>
+                        Artiste 2D
+                    </td>
+                    <td>
+                        Artiste 2D
+                    </td>
+                    <td>
+                        Lead Developpeur
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://github.com/NymePse"><img src="./Images/Icons/Github_icon.png" class="Clickable Logo"></a>
+                        <a href="http://alysbi.fr/"><img src="./Images/Icons/Website_icon.png" class="Clickable Logo"></a>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <a href="https://www.instagram.com/hyliss_erj/"><img src="./Images/Icons/Instagram_icon.png" class="Clickable Logo"></a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <p class="Centrer" style="font-size:25px">contact : <a href="mailto: aeon.jeu@gmail.com">aeon.jeu@gmail.com</a></p>
     </body>
 </html>
