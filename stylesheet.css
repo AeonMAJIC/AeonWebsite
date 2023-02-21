@@ -217,6 +217,7 @@ button:hover
 .slide-table
 {
     table-layout: auto;
+    margin-bottom: 10px;
 }
 
 .slide-td-border
