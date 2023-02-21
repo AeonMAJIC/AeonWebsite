@@ -132,6 +132,10 @@ button:hover
     margin-top: 10vh;
 }
 
+#AccueilTextes {
+    margin: auto 4vw;
+}
+
 #Accueil p {
     font-size: 4vw;
 }
@@ -314,6 +318,13 @@ button:hover
 {
     #Accueil {
         height: 90vh;
+        vertical-align: middle;
+    }
+
+    #AccueilTextes {
+        margin: auto;
+        height: 100%;
+        padding: 3vw;
     }
 
     #ImageAccueil
@@ -323,6 +334,7 @@ button:hover
         float: left;
         clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);
         shape-outside: polygon(70% 0%, 100% 100%, 0% 100%, 0% 0%);
+        shape-margin: 3vw;
     }
 
     #Accueil p {
