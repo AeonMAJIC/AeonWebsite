@@ -9,18 +9,17 @@
 /* BODY */
 /********/
 
-body
-{
+body {
     margin: 0;
     max-width: 100vw;
-    direction: rtl; /*To place the horizontal bar on left instead of right*/
+    direction: rtl;
+    /*To place the horizontal bar on left instead of right*/
     overflow-x: hidden;
     background: linear-gradient(to bottom, Black, #292a2b, Black);
     color: white;
 }
 
-*:not(body)
-{
+*:not(body) {
     direction: initial;
 }
 
@@ -28,13 +27,11 @@ body
 /* CURSEUR */
 /***********/
 
-.Clickable
-{
+.Clickable {
     cursor: pointer;
 }
 
-*:not(.Clickable)
-{
+*:not(.Clickable) {
     cursor: url('./Images/cursor.cur'), auto;
 }
 
@@ -42,7 +39,8 @@ body
 /* TEXTES */
 /**********/
 
-h1, h2 {
+h1,
+h2 {
     font-family: Oldenburg;
     text-align: center;
 }
@@ -63,8 +61,7 @@ a {
 /* VIDEO */
 /*********/
 
-iframe
-{ 
+iframe {
     width: 85%;
     aspect-ratio: 16 / 9;
 }
@@ -78,8 +75,7 @@ iframe
     text-align: center;
 }
 
-button
-{
+button {
     background-color: #bf9d37;
     border: none;
     border-radius: 3vh;
@@ -87,10 +83,11 @@ button
     cursor: pointer;
     font-size: 20px;
     padding: 5px 20px;
+    min-width: 200px;
+    font-size: 3vh;
 }
 
-button:hover
-{
+button:hover {
     background-color: navy;
 }
 
@@ -98,8 +95,7 @@ button:hover
 /* TOP BAR */
 /***********/
 
-.TopBar
-{
+.TopBar {
     position: fixed;
     top: 2vh;
     width: fit-content;
@@ -166,10 +162,9 @@ button:hover
     border: 3px solid #bf9d37;
 }
 
-.Logo
-{
+.Logo {
     width: 3vh;
-    height:3vh;
+    height: 3vh;
 }
 
 
@@ -178,23 +173,20 @@ button:hover
 /* TABLEAU */
 /***********/
 
-.Tableau, .Centrer
-{
+.Tableau,
+.Centrer {
     text-align: center;
 }
 
-.Tableau.Nom
-{
+.Tableau.Nom {
     font-size: 20px;
 }
 
-.Tableau.Role
-{
+.Tableau.Role {
     font-size: 16px;
 }
 
-.CentrerTableau
-{
+.CentrerTableau {
     margin-left: auto;
     margin-right: auto;
 }
@@ -203,34 +195,32 @@ button:hover
 /* GALERIE */
 /***********/
 
-.YoutubeWindow
-{
+.YoutubeWindow {
     height: auto;
     width: 95vw;
 }
 
-.custom-slider { display: none; }
+.custom-slider {
+    display: none;
+}
 
-.slide-container
-{
+.slide-container {
     max-width: 95%;
     position: relative;
     margin: auto;
 }
 
-.slide-table
-{
+.slide-table {
     table-layout: auto;
     margin-bottom: 10px;
 }
 
-.slide-td-border
-{
+.slide-td-border {
     border: 1px solid gold;
 }
 
-.prev, .next
-{
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -243,40 +233,43 @@ button:hover
     border-radius: 50%;
     color: white;
     font-size: 30px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.6s ease;
 }
 
-.prev{ left: 15px; }
-.next { right: 15px; }
-
-.prev:hover, .next:hover
-{
-    background-color: rgba(0,0,0,0.5);
+.prev {
+    left: 15px;
 }
 
-.slide-img
-{
+.next {
+    right: 15px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-img {
     width: 100%;
     max-height: 85vh;
     object-fit: contain;
     object-position: center;
 }
 
-.slide-selector
-{
+.slide-selector {
     text-align: center;
 }
 
-.selector
-{
+.selector {
     cursor: pointer;
     height: 10vh;
     width: 10vh;
     margin: 0 1vh;
     border-radius: 20%;
     display: inline-block;
-    background-color: black;/*#999999;*/
+    background-color: black;
+    /*#999999;*/
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -284,21 +277,24 @@ button:hover
     transition: opacity 0.5s ease;
 }
 
-.active, .selector:hover
-{
-   opacity: 1;
+.active,
+.selector:hover {
+    opacity: 1;
 }
 
-.fade
-{
+.fade {
     animation-name: fade;
     animation-duration: 1s;
 }
 
-@keyframes fade
-{
-    from {opacity: 0}
-    to {opacity: 1}
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /***********/
@@ -314,8 +310,7 @@ button:hover
 /* REGLES ECRAN LARGE */
 /**********************/
 
-@media only screen and (min-width: 1001px)
-{
+@media only screen and (min-width: 1001px) {
     #Accueil {
         height: 90vh;
         vertical-align: middle;
@@ -327,8 +322,7 @@ button:hover
         padding: 3vw;
     }
 
-    #ImageAccueil
-    {
+    #ImageAccueil {
         height: 90vh;
         width: 90vh;
         float: left;
@@ -341,8 +335,7 @@ button:hover
         font-size: 4vh;
     }
 
-    .YoutubeWindow
-    {
+    .YoutubeWindow {
         height: auto;
         width: 70vw;
     }
