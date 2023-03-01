@@ -1,324 +1,99 @@
 <!--
     Écrit par Florian Boireau
     https://github.com/Skulls23
+    Maintenu par Arnaud Lysensoone Bijou
+    https://github.com/NymePse
 -->
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Aeon Le Jeu</title>
-    <link rel="stylesheet" href="stylesheet.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oldenburg" />
-    <script src="script.js"></script>
-    <link rel="icon" type="image/png" href="./Images/loho_typo_blanc.png" />
-    <script src="https://kit.fontawesome.com/b20e542085.js" crossorigin="anonymous"></script>
+    <title>Aeon - Le jeu</title>
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oldenburg"/>
+    <link rel="icon" type="image/png" href="./Images/LogoAeonBlanc.png"/>
+    <!-- META -->
     <meta charset="UTF-8">
-    <meta name="description" content="The official Aeon website">
-    <meta name="keywords" content="Aeon, Videogame, Video, Game"><!--#TODO Demander d'autres TAG-->
-    <meta name="author" content="Florian Boireau">
+    <meta name="description" content="Le site officiel du jeu vidéo étudiant Aeon.">
+    <meta name="keywords" content="Aeon, Videogame, Video, Game, jeu, jeux, jeu vidéo, jeu video, jeux vidéo, jeux video, étudiant, etudiant">
+    <meta name="author" content="Florian Boireau & Arnaud Lysensoone--Bijou">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
 </head>
 
-<header class="TopBar">
-    <table>
-        <tbody>
-            <tr>
-                <td><a href="#Accueil" class="Clickable">Accueil</a></td>
-                <td><a href="#Video" class="Clickable">Vidéo</a></td>
-                <td><a href="#Galerie" class="Clickable">Galerie</a></td>
-                <td><a href="#Equipe" class="Clickable">L'équipe</a></td>
-            </tr>
-        </tbody>
-    </table>
-</header>
-
-<body>
-    <div id="Accueil">
-        <img src="./Images/blondeAssise.png"
-            alt="Rendu 3D du personnage principal, Lily, assise sur un coffre, un bouclier à ses pieds"
-            id="ImageAccueil">
-        <div id="AccueilTextes">
-            <h1>Découvrez Aeon, explorez le Temple et percez ses mystères.</h1>
-            <p>
-                Aeon est un jeu d'action-aventure à la troisième personne dans lequel vous incarnez Lily,
-                jeune femme à la recherche de son frère jumeau disparu alors qu'il explorait un mystérieux Temple apparu
-                de nulle part,
-                guidée par une voix mystérieuse.
-                <br>
-                Saurez-vous parvenir à bout des énigmes du Temple, et survivrez-vous à ses pièges ?
-            </p>
-            <div class="CenterButton">
-                <a href="https://drive.google.com/file/d/1EP8kMLpWGlBto8OnUkU-w-hkRuHrVmli/view?usp=share_link">
-                    <button class="Clickable"><i class="fa-brands fa-windows"></i>Télécharger</button>
-                </a>
-                <a href="https://drive.google.com/file/d/1haBmOTOKNwD7hcRvVHeaVU-gu2-oOzDQ/view?usp=sharing">
-                    <button class="Clickable"><i class="fa-brands fa-apple"></i>Télécharger</button>
-                </a>
-            </div>
-            <p style="text-align: center;">Si vous voulez soutenir de jeunes créateurs, pensez au don !</p>
-            <div class="CenterButton">
-
-                <a href="https://paypal.me/thomasarroche?country.x=FR&locale.x=fr_FR">
-                    <button class="Clickable">Faire un don Paypal</button>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div id="Video">
-        <h1>Vidéo</h1>
-        <div class="Centrer">
-            <iframe src="https://www.youtube.com/embed/vA3TZC61xlo" title="Aeon gameplay video" class="YoutubeWindow"
-                frameborder="0"
-                allows="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div id="Galerie">
-        <h1 class="Centrer">Galerie</h1>
-        <h2 class="Centrer" style="display: none;">Personnages</h2>
-
-        <!--If a new slide-container is added, increment his data-groupe (from custom-slider, selector) by 1 (let's call this i)
-                Also, put all the 2nd var of functions (plusSlide, currentSlide) to i
-                Then add firstSelectors(i); in firstUpdate() in the script.js-->
-
-        <div class="slide-container">
-            <a class="prev" onclick="plusSlide(-1, 0)">❮</a>
-            <a class="next" onclick="plusSlide(1 , 0)">❯</a>
-
-            <table class="slide-table CentrerTableau">
-                <tr>
-                    <td class="slide-td-border">
-                        <div class="custom-slider fade" data-groupe="0">
-                            <img class="slide-img" src="./Images/Diaporama/charite.png">
-                        </div>
-                        <div class="custom-slider fade" data-groupe="0">
-                            <img class="slide-img" src="./Images/Diaporama/interieur.png">
-                        </div>
-                        <div class="custom-slider fade" data-groupe="0">
-                            <img class="slide-img" src="./Images/Diaporama/golem.png">
-                        </div>
-                        <div class="custom-slider fade" data-groupe="0">
-                            <img class="slide-img" src="./Images/Diaporama/blondeEtMonsieur.png">
-                        </div>
-                        <div class="custom-slider fade" data-groupe="0">
-                            <img class="slide-img" src="./Images/Diaporama/monsieurCapuche.png">
-                        </div>
-                    </td>
-                </tr>
-            </table>
-
-            <div class="slide-selector">
-                <span class="selector" onclick="currentSlide(1, 0)" data-groupe="0"></span>
-                <span class="selector" onclick="currentSlide(2, 0)" data-groupe="0"></span>
-                <span class="selector" onclick="currentSlide(3, 0)" data-groupe="0"></span>
-                <span class="selector" onclick="currentSlide(4, 0)" data-groupe="0"></span>
-                <span class="selector" onclick="currentSlide(5, 0)" data-groupe="0"></span>
-            </div>
-        </div>
-
-        <h2 style="display: none;">Temple</h2>
-
-        <div class="slide-container" style="display: none;">
-            <a class="prev" onclick="plusSlide(-1, 1)">❮</a>
-            <a class="next" onclick="plusSlide(1 , 1)">❯</a>
-
-            <table class="slide-table CentrerTableau">
-                <tr>
-                    <td class="slide-td-border">
-                        <div class="custom-slider fade" data-groupe="1">
-                            <img class="slide-img" src="./Images/Diaporama/charite.png">
-                        </div>
-                        <div class="custom-slider fade" data-groupe="1">
-                            <img class="slide-img" src="./Images/Diaporama/interieur.png">
-                        </div>
-                        <div class="custom-slider fade" data-groupe="1">
-                            <img class="slide-img" src="./Images/Diaporama/golem.png">
-                        </div>
-                        <div class="custom-slider fade" data-groupe="1">
-                            <img class="slide-img" src="./Images/Diaporama/blondeEtMonsieur.png">
-                        </div>
-                        <div class="custom-slider fade" data-groupe="1">
-                            <img class="slide-img" src="./Images/Diaporama/monsieurCapuche.png">
-                        </div>
-                    </td>
-                </tr>
-            </table>
-
-            <div class="slide-selector">
-                <span class="selector" onclick="currentSlide(1, 1)" data-groupe="1"></span>
-                <span class="selector" onclick="currentSlide(2, 1)" data-groupe="1"></span>
-                <span class="selector" onclick="currentSlide(3, 1)" data-groupe="1"></span>
-                <span class="selector" onclick="currentSlide(4, 1)" data-groupe="1"></span>
-                <span class="selector" onclick="currentSlide(5, 1)" data-groupe="1"></span>
-            </div>
-        </div>
-
-        <h2 style="display: none;">Concept Arts</h2>
-
-        <div class="slide-container" style="display: none;">
-            <a class="prev" onclick="plusSlide(-1, 2)">❮</a>
-            <a class="next" onclick="plusSlide(1 , 2)">❯</a>
-
-            <table class="slide-table CentrerTableau">
-                <tr>
-                    <td class="slide-td-border">
-                        <div class="custom-slider fade" data-groupe="2">
-                            <img class="slide-img" src="./Images/Diaporama/charite.png">
-                        </div>
-                        <div class="custom-slider fade" data-groupe="2">
-                            <img class="slide-img" src="./Images/Diaporama/interieur.png">
-                        </div>
-                        <div class="custom-slider fade" data-groupe="2">
-                            <img class="slide-img" src="./Images/Diaporama/golem.png">
-                        </div>
-                        <div class="custom-slider fade" data-groupe="2">
-                            <img class="slide-img" src="./Images/Diaporama/blondeEtMonsieur.png">
-                        </div>
-                        <div class="custom-slider fade" data-groupe="2">
-                            <img class="slide-img" src="./Images/Diaporama/monsieurCapuche.png">
-                        </div>
-                    </td>
-                </tr>
-            </table>
-
-            <div class="slide-selector">
-                <span class="selector" onclick="currentSlide(1, 2)" data-groupe="2"></span>
-                <span class="selector" onclick="currentSlide(2, 2)" data-groupe="2"></span>
-                <span class="selector" onclick="currentSlide(3, 2)" data-groupe="2"></span>
-                <span class="selector" onclick="currentSlide(4, 2)" data-groupe="2"></span>
-                <span class="selector" onclick="currentSlide(5, 2)" data-groupe="2"></span>
-            </div>
-        </div>
-    </div>
-
-    <div id="Equipe">
-        <h1>L'équipe</h1>
-        <table class="TableauEquipe">
-            <tr>
-                <td><img src="./Images/Membres/Quentin.jpg" alt="Quentin" class="PhotoEquipe" /></td>
-                <td><img src="./Images/Membres/Brice.jpg" alt="Brice" class="PhotoEquipe" /></td>
-                <td><img src="./Images/Membres/Melanie.jpg" alt="Mélanie" class="PhotoEquipe" /></td>
-                <td><img src="./Images/Membres/Thomas.jpg" alt="Thomas" class="PhotoEquipe" /></td>
-            </tr>
-            <tr>
-                <td>Quentin<br>Garnier</td>
-                <td>Brice<br>Graulier</td>
-                <td>Mélanie<br>Gallardo</td>
-                <td>Thomas<br>Sarroche</td>
-            </tr>
-            <tr>
-                <td>
-                    Project Owner<br>
-                    Narrative Designer<br>
-                    Level Designer
-                </td>
-                <td>
-                    Scrum Master<br>
-                    Developpeur
-                </td>
-                <td>
-                    Artiste 3D
-                </td>
-                <td>
-                    Directeur Artistique<br>
-                    Artiste 3D
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="https://github.com/QuentinGarnier "><img src="./Images/Icons/Github_icon.png"
-                            class="Clickable Logo"></a>
-                    <a href="https://www.instagram.com/qgarnier5/ "><img src="./Images/Icons/Instagram_icon.png"
-                            class="Clickable Logo"></a>
-                    <a href="https://www.linkedin.com/in/quentin-garnier-98bba222b/"><img
-                            src="./Images/Icons/Linkedin_icon.png" class="Clickable Logo"></a>
-                </td>
-                <td>
-                    <a href="https://www.linkedin.com/in/brice-graulier-148832134/"><img
-                            src="./Images/Icons/Linkedin_icon.png" class="Clickable Logo"></a>
-                    <a href="https://github.com/GraulierBrice"><img src="./Images/Icons/Github_icon.png"
-                            class="Clickable Logo"></a>
-                </td>
-                <td>
-                    <a href="https://www.artstation.com/melaniegallardo"><img src="./Images/Icons/Artstation_icon.png"
-                            class="Clickable Logo"></a>
-                    <a href="https://www.instagram.com/kliv3r77/"><img src="./Images/Icons/Instagram_icon.png"
-                            class="Clickable Logo"></a>
-                    <a href="https://www.linkedin.com/in/m%C3%A9lanie-gallardo-3259641b7/"><img
-                            src="./Images/Icons/Linkedin_icon.png" class="Clickable Logo"></a>
-                </td>
-                <td>
-                    <a href="https://www.artstation.com/thomassarroche"><img src="./Images/Icons/Artstation_icon.png"
-                            class="Clickable Logo"></a>
-                    <a href="https://www.linkedin.com/in/thomas-sarroche-896519179/"><img
-                            src="./Images/Icons/Linkedin_icon.png" class="Clickable Logo"></a>
-                </td>
-            </tr>
-        </table>
-        <table class="TableauEquipe">
-            <tr>
-                <td><img src="./Images/Membres/Arnaud.jpg" alt="Arnaud" class="PhotoEquipe" /></td>
-                <td><img src="./Images/Membres/Mickael.jpg" alt="Mickael" class="PhotoEquipe" /></td>
-                <td><img src="./Images/Membres/Clemence.jpg" alt="Clémence" class="PhotoEquipe" /></td>
-                <td><img src="./Images/Membres/Adil.jpg" alt="Adil" class="PhotoEquipe" /></td>
-            </tr>
-            <tr>
-                <td>Arnaud<br>Lysensoone--Bijou</td>
-                <td>Mickael<br>Bienaime</td>
-                <td>Clémence<br>Hartmann</td>
-                <td>Adil<br>Chaouch</td>
-            </tr>
-            <tr>
-                <td>
-                    Narrative Designer<br>
-                    Community Manager
-                </td>
-                <td>
-                    Artiste 3D<br>
-                    Artiste 2D
-                </td>
-                <td>
-                    Artiste 2D
-                </td>
-                <td>
-                    Lead Developpeur
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="https://github.com/NymePse"><img src="./Images/Icons/Github_icon.png"
-                            class="Clickable Logo"></a>
-                    <a href="http://alysbi.fr/"><img src="./Images/Icons/Website_icon.png" class="Clickable Logo"></a>
-                </td>
-                <td>
-                </td>
-                <td>
-                    <a href="https://www.instagram.com/hyliss_erj/"><img src="./Images/Icons/Instagram_icon.png"
-                            class="Clickable Logo"></a>
-                </td>
-                <td>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <div id="Contact">
-        <h1>Où nous retrouver</h1>
-        <p>
-            <span>Instagram : </span><a href="https://www.instagram.com/aeonofficiel/"
-                class="Clickable">@aeonofficiel</a>
-        </p>
-        <p>
-            <span>Ludhic : </span><a href="https://ludhic.fr/jeux/aeon" class="Clickable">ludhic.fr/jeux/aeon</a>
-        </p>
-        <p>
-            <span>Mail : </span><a href="mailto: aeon.jeu@gmail.com" class="Clickable">aeon.jeu@gmail.com</a>
-        </p>
-    </div>
+<body onload="script.js">
 </body>
+    <section id="accueil">
+        <!-- 
+            TODO Ajouter les éléments suivants (Accueil)
+            * Image du jeu
+            * Titre
+            * Texte d'accroche
+            * Boutons de téléchargement
+            * Bouton de dons
+         -->
 
+         <img id="image_accueil_fond"/>
+         <div id="division_accueil">
+            <h1 id="titre_accueil"></h1>
+            <p id="texte_accueil"></p>
+            <a id="bouton_telecharger_windows"><button></button></a>
+            <a id="bouton_telecharger_mac"><button></button></a>
+            <a id="bouton_dons"><button></button></a>
+         </div>
+    </section>
+
+    <section id="galerie">
+        <!-- 
+            TODO Ajouter les éléments suivants (Galerie)
+            * Trailer youtube
+            * Diaporama images du jeu
+         -->
+         <div id="division_video">
+            <h2 id="titre_video"></h2>
+            <iframe id="trailer"></iframe>
+         </div>
+
+         <div id="groupe_diapo">
+            <h2 id="titre_diapo"></h2>
+            <!-- TODO Ajouter élément diaporama -->
+         </div>
+    </section>
+
+    <section id="equipe">
+        <!-- 
+            TODO Ajouter les éléments suivants (Equipe)
+            * Liste membres de l'équipe, avec :
+                * Photo
+                * Nom
+                * Postes
+                * Liens
+         -->
+
+         <h2 id="titre_equipe"></h2>
+         <!-- TODO Créer template carte membre de l'équipe -->
+    </section>
+
+    <footer>
+        <!-- TODO Ajouter les éléments suivants (Footer)
+            * Instagram
+            * Mail de contact
+            * Ludhic
+        -->
+
+        <div id="instagram">
+            <img id="image_instagram"/>
+            <span id="texte_instagram"></span>
+        </div>
+
+        <div id="email">
+            <img id="image_email"/>
+            <span id="texte_email"></span>
+        </div>
+
+        <div id="ludhic">
+            <img id="image_ludhic"/>
+            <span id="texte_ludhic"></span>
+        </div>
+    </footer>
 </html>
