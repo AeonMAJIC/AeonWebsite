@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oldenburg"/>
     <link rel="icon" type="image/png" href="./Images/LogoAeonBlanc.png"/>
     <script src="https://kit.fontawesome.com/b20e542085.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <!-- META -->
     <meta charset="UTF-8">
     <meta name="description" content="Le site officiel du jeu vidéo étudiant Aeon.">
@@ -22,8 +23,7 @@
     <meta name="HandheldFriendly" content="true">
 </head>
 
-<body onload="script.js">
-</body>
+<body  onload="showSlides(1)">
     <section id="accueil">
         <!-- 
             TODO Mise en forme (Accueil)
@@ -65,29 +65,12 @@
             <!-- Volé sur W3School : https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
             <div class="container">
                 <!-- Full-width images with number text -->
-                <div class="mySlides">
-                    <img src="https://dummyimage.com/1080x720/000" style="width:100%">
-                </div>
-            
-                <div class="mySlides">
-                    <img src="https://dummyimage.com/1080x720/111" style="width:100%">
-                </div>
-            
-                <div class="mySlides">
-                    <img src="https://dummyimage.com/1080x720/222" style="width:100%">
-                </div>
-            
-                <div class="mySlides">
-                    <img src="https://dummyimage.com/1080x720/333" style="width:100%">
-                </div>
-            
-                <div class="mySlides">
-                    <img src="https://dummyimage.com/1080x720/444" style="width:100%">
-                </div>
-            
-                <div class="mySlides">
-                    <img src="https://dummyimage.com/1080x720/555" style="width:100%">
-                </div>
+                    <img src="https://dummyimage.com/1080x720/000" class="mySlides" alt="Lorem">
+                    <img src="https://dummyimage.com/1080x720/111" class="mySlides" alt="Ipsum">
+                    <img src="https://dummyimage.com/1080x720/222" class="mySlides" alt="Dolores">
+                    <img src="https://dummyimage.com/1080x720/333" class="mySlides" alt="It">
+                    <img src="https://dummyimage.com/1080x720/444" class="mySlides" alt="Amet">
+                    <img src="https://dummyimage.com/1080x720/555" class="mySlides" alt="Sus">
             
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
@@ -150,4 +133,5 @@
             <a id="texte_ludhic" href="https://ludhic.fr/jeux/aeon">ludhic.fr</a>
         </div>
     </footer>
+</body>
 </html>
