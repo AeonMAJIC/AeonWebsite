@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="stylesheet.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oldenburg"/>
     <link rel="icon" type="image/png" href="./Images/LogoAeonBlanc.png"/>
+    <script src="https://kit.fontawesome.com/b20e542085.js" crossorigin="anonymous"></script>
     <!-- META -->
     <meta charset="UTF-8">
     <meta name="description" content="Le site officiel du jeu vidéo étudiant Aeon.">
@@ -25,38 +26,78 @@
 </body>
     <section id="accueil">
         <!-- 
-            TODO Ajouter les éléments suivants (Accueil)
-            * Image du jeu
-            * Titre
-            * Texte d'accroche
-            * Boutons de téléchargement
-            * Bouton de dons
+            TODO Mise en forme (Accueil)
+            TODO Accueil large : Image slash avec texte sur le côté
+            TODO Accueil mobile : Image au dessus de texte
          -->
 
-         <img id="image_accueil_fond"/>
+         <img id="image_accueil_fond" src="https://dummyimage.com/1920x1080"/>
          <div id="division_accueil">
-            <h1 id="titre_accueil"></h1>
-            <p id="texte_accueil"></p>
-            <a id="bouton_telecharger_windows"><button></button></a>
-            <a id="bouton_telecharger_mac"><button></button></a>
-            <a id="bouton_dons"><button></button></a>
+            <h1 id="titre_accueil">AEON</h1>
+            <p id="texte_accueil">
+                Découvrez Aeon, explorez le Temple et percez ses mystères.
+                <br>
+                Aeon est un jeu d'action-aventure à la troisième personne dans lequel vous incarnez Lily,
+                jeune femme à la recherche de son frère jumeau disparu alors qu'il explorait un mystérieux Temple 
+                apparu de nulle part, guidée par une voix mystérieuse.
+                <br>
+                Saurez-vous parvenir à bout des énigmes du Temple, et survivrez-vous à ses pièges ?
+            </p>
+            <a id="bouton_telecharger_windows" href="https://drive.google.com/file/d/1EP8kMLpWGlBto8OnUkU-w-hkRuHrVmli/view?usp=share_link"><button><i class="fa-brands fa-windows"></i>Télécharger</button></a>
+            <a id="bouton_telecharger_mac" href="https://drive.google.com/file/d/1haBmOTOKNwD7hcRvVHeaVU-gu2-oOzDQ/view?usp=sharing"><button><i class="fa-brands fa-apple"></i>Télécharger</button></a>
+            <a id="bouton_dons" href="https://paypal.me/thomasarroche?country.x=FR&locale.x=fr_FR"><button>Faire un don Paypal</button></a>
          </div>
     </section>
 
     <section id="galerie">
         <!-- 
             TODO Ajouter les éléments suivants (Galerie)
-            * Trailer youtube
             * Diaporama images du jeu
          -->
          <div id="division_video">
-            <h2 id="titre_video"></h2>
-            <iframe id="trailer"></iframe>
+            <h2 id="titre_video">Trailer</h2>
+            <iframe id="trailer" src="https://www.youtube.com/embed/vA3TZC61xlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
          </div>
 
-         <div id="groupe_diapo">
-            <h2 id="titre_diapo"></h2>
+         <div id="division_diapo">
+            <h2 id="titre_diapo">Galerie</h2>
             <!-- TODO Ajouter élément diaporama -->
+            <!-- Volé sur W3School : https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+            <div class="container">
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <img src="https://dummyimage.com/1080x720/000" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <img src="https://dummyimage.com/1080x720/111" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <img src="https://dummyimage.com/1080x720/222" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <img src="https://dummyimage.com/1080x720/333" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <img src="https://dummyimage.com/1080x720/444" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <img src="https://dummyimage.com/1080x720/555" style="width:100%">
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+                <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+            
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
          </div>
     </section>
 
@@ -72,28 +113,41 @@
 
          <h2 id="titre_equipe"></h2>
          <!-- TODO Créer template carte membre de l'équipe -->
+
+         <article class="carte_equipe">
+            <img src="https://dummyimage.com/400x400">
+            <h3 class="nom_equipe">Nom Prénom</h3>
+            <ul class="liste_postes_equipe">
+                <li class="element_liste_postes_equipe">Poste</li>
+                <li class="element_liste_postes_equipe">Poste</li>
+                <li class="element_liste_postes_equipe">Poste</li>
+            </ul>
+            <div>
+                <a><i class="fa-regular fa-globe"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+            </div>
+         </article>
     </section>
 
     <footer>
-        <!-- TODO Ajouter les éléments suivants (Footer)
-            * Instagram
-            * Mail de contact
-            * Ludhic
+        <!--
+            TODO Mise en forme (Footer)
+            TODO Textes en inline
         -->
 
         <div id="instagram">
-            <img id="image_instagram"/>
-            <span id="texte_instagram"></span>
+            <i class="fa-brands fa-instagram"></i>
+            <a id="texte_instagram" href="https://www.instagram.com/aeonofficiel/">@aeonofficiel</a>
         </div>
 
         <div id="email">
-            <img id="image_email"/>
-            <span id="texte_email"></span>
+            <i class="fa-regular fa-envelope"></i>
+            <a id="texte_email" href="mailto: aeon.jeu@gmail.com">aeon.jeu@gmail.com</a>
         </div>
 
         <div id="ludhic">
-            <img id="image_ludhic"/>
-            <span id="texte_ludhic"></span>
+            <i class="fa-regular fa-joystick"></i>
+            <a id="texte_ludhic" href="https://ludhic.fr/jeux/aeon">ludhic.fr</a>
         </div>
     </footer>
 </html>
