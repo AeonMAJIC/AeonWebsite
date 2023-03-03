@@ -64,13 +64,12 @@
             <!-- TODO Ajouter élément diaporama -->
             <!-- Volé sur W3School : https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
             <div class="container">
-                <!-- Full-width images with number text -->
-                    <img src="https://dummyimage.com/1080x720/000" class="mySlides" alt="Lorem">
-                    <img src="https://dummyimage.com/1080x720/111" class="mySlides" alt="Ipsum">
-                    <img src="https://dummyimage.com/1080x720/222" class="mySlides" alt="Dolores">
-                    <img src="https://dummyimage.com/1080x720/333" class="mySlides" alt="It">
-                    <img src="https://dummyimage.com/1080x720/444" class="mySlides" alt="Amet">
-                    <img src="https://dummyimage.com/1080x720/555" class="mySlides" alt="Sus">
+                <img src="https://dummyimage.com/1080x720/000" class="mySlides" alt="Lorem">
+                <img src="https://dummyimage.com/1080x720/111" class="mySlides" alt="Ipsum">
+                <img src="https://dummyimage.com/1080x720/222" class="mySlides" alt="Dolores">
+                <img src="https://dummyimage.com/1080x720/333" class="mySlides" alt="It">
+                <img src="https://dummyimage.com/1080x720/444" class="mySlides" alt="Amet">
+                <img src="https://dummyimage.com/1080x720/555" class="mySlides" alt="Sus">
             
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
@@ -94,22 +93,131 @@
                 * Liens
          -->
 
-         <h2 id="titre_equipe"></h2>
+         <h2 id="titre_equipe">Equipe</h2>
          <!-- TODO Créer template carte membre de l'équipe -->
 
-         <article class="carte_equipe">
-            <img src="https://dummyimage.com/400x400">
-            <h3 class="nom_equipe">Nom Prénom</h3>
-            <ul class="liste_postes_equipe">
-                <li class="element_liste_postes_equipe">Poste</li>
-                <li class="element_liste_postes_equipe">Poste</li>
-                <li class="element_liste_postes_equipe">Poste</li>
-            </ul>
-            <div>
-                <a><i class="fa-regular fa-globe"></i></a>
-                <a><i class="fa-brands fa-instagram"></i></a>
-            </div>
-         </article>
+         <div id="flexbox_equipe">
+            <article class="carte_equipe">
+                <img class="image_equipe" src="https://dummyimage.com/400x400">
+                <h3 class="nom_equipe">Quentin GARNIER</h3>
+                <hr class="separateur_equipe">
+                <ul class="liste_postes_equipe">
+                    <li class="element_liste_postes_equipe">Co-Créateur</li>
+                    <li class="element_liste_postes_equipe">Product Owner</li>
+                    <li class="element_liste_postes_equipe">Narrative Designer</li>
+                    <li class="element_liste_postes_equipe">Level Designer</li>
+                </ul>
+                <hr class="separateur_equipe">
+                <div class="division_liens_equipe">
+                    <a href="https://github.com/QuentinGarnier"><i class="fa-regular fa-github"></i></a>
+                    <a href="https://www.instagram.com/qgarnier5/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/quentin-garnier-98bba222b/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+
+            <article class="carte_equipe">
+                <img class="image_equipe" src="https://dummyimage.com/400x400">
+                <h3 class="nom_equipe">Brice GRAULIER</h3>
+                <hr class="separateur_equipe">
+                <ul class="liste_postes_equipe">
+                    <li class="element_liste_postes_equipe">Co-Créateur</li>
+                    <li class="element_liste_postes_equipe">Scrum Master</li>
+                    <li class="element_liste_postes_equipe">Développeur</li>
+                    <li class="element_liste_postes_equipe">Level Designer</li>
+                </ul>
+                <hr class="separateur_equipe">
+                <div class="division_liens_equipe">
+                    <a href="https://www.linkedin.com/in/brice-graulier-148832134/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/GraulierBrice"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </article>
+
+            <article class="carte_equipe">
+                <img class="image_equipe" src="https://dummyimage.com/400x400">
+                <h3 class="nom_equipe">Arnaud LYSENSOONE BIJOU</h3>
+                <hr class="separateur_equipe">
+                <ul class="liste_postes_equipe">
+                    <li class="element_liste_postes_equipe">Co-Créateur</li>
+                    <li class="element_liste_postes_equipe">Narrative Designer</li>
+                    <li class="element_liste_postes_equipe">Game Designer</li>
+                    <li class="element_liste_postes_equipe">Community Manager</li>
+                </ul>
+                <hr class="separateur_equipe">
+                <div class="division_liens_equipe">
+                    <a href="http://alysbi.fr/"><i class="fa-regular fa-globe"></i></a>
+                    <a href="https://github.com/NymePse"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </article>
+
+            <article class="carte_equipe">
+                <img class="image_equipe" src="https://dummyimage.com/400x400">
+                <h3 class="nom_equipe">Mélanie GALLARDO</h3>
+                <hr class="separateur_equipe">
+                <ul class="liste_postes_equipe">
+                    <li class="element_liste_postes_equipe">Artiste 3D</li>
+                </ul>
+                <hr class="separateur_equipe">
+                <div class="division_liens_equipe">
+                    <a href="https://www.artstation.com/melaniegallardo"><i class="fa-brands fa-artstation"></i></a>
+                    <a href="https://www.instagram.com/kliv3r77/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/m%C3%A9lanie-gallardo-3259641b7/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+
+            <article class="carte_equipe">
+                <img class="image_equipe" src="https://dummyimage.com/400x400">
+                <h3 class="nom_equipe">Thomas SARROCHE</h3>
+                <hr class="separateur_equipe">
+                <ul class="liste_postes_equipe">
+                    <li class="element_liste_postes_equipe">Directeur Artistique</li>
+                    <li class="element_liste_postes_equipe">Artiste 3D</li>
+                    <li class="element_liste_postes_equipe">Level Designer</li>
+                </ul>
+                <hr class="separateur_equipe">
+                <div class="division_liens_equipe">
+                    <a href="https://www.artstation.com/thomassarroche"><i class="fa-brands fa-artstation"></i></a>
+                    <a href="https://www.linkedin.com/in/thomas-sarroche-896519179/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+
+            <article class="carte_equipe">
+                <img class="image_equipe" src="https://dummyimage.com/400x400">
+                <h3 class="nom_equipe">Clem HARTMANN</h3>
+                <hr class="separateur_equipe">
+                <ul class="liste_postes_equipe">
+                    <li class="element_liste_postes_equipe">Artiste 2D</li>
+                </ul>
+                <hr class="separateur_equipe">
+                <div class="division_liens_equipe">
+                    <a href="https://www.instagram.com/hyliss_erj/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </article>
+
+            <article class="carte_equipe">
+                <img class="image_equipe" src="https://dummyimage.com/400x400">
+                <h3 class="nom_equipe">Adil CHAOUCH</h3>
+                <hr class="separateur_equipe">
+                <ul class="liste_postes_equipe">
+                    <li class="element_liste_postes_equipe">Développeur</li>
+                </ul>
+                <hr class="separateur_equipe">
+                <div class="division_liens_equipe">
+                </div>
+            </article>
+
+            <article class="carte_equipe">
+                <img class="image_equipe" src="https://dummyimage.com/400x400">
+                <h3 class="nom_equipe">Mickaël BIENAIMÉ</h3>
+                <hr class="separateur_equipe">
+                <ul class="liste_postes_equipe">
+                    <li class="element_liste_postes_equipe">Artiste 3D</li>
+                    <li class="element_liste_postes_equipe">Artiste 2D</li>
+                </ul>
+                <hr class="separateur_equipe">
+                <div class="division_liens_equipe">
+                </div>
+            </article>
+         </div>
     </section>
 
     <footer>

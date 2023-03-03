@@ -11,6 +11,45 @@
     --jaune: #BF9D37;
 }
 
+/* EQUIPE */
+#flexbox_equipe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.carte_equipe {
+    width: 250px;
+}
+
+.image_equipe {
+    display: block;
+    margin: 0 auto 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.nom_equipe {
+    text-align: center;
+}
+
+.liste_postes_equipe {
+    list-style: none;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.division_liens_equipe {
+    text-align: center;
+}
+
+.separateur_equipe {
+    width: 75%;
+}
+
 /* SLIDESHOW : W3School https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
 .container * {
     box-sizing: border-box;
