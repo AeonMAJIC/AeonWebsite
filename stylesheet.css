@@ -139,3 +139,10 @@ h1, h2, h3 {
     padding: 2px 16px;
     color: white;
 }
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+}
