@@ -9,7 +9,8 @@
 :root {
     --noir: #292A2B;
     --jaune: #BF9D37;
-    --decoupage_image_accueil: polygon(60% 0%, 80% 100%, 0% 100%, 0% 0%);
+    --decoupage_image_accueil: polygon(50% 0%, 75% 100%, 0% 100%, 0% 0%);
+    --margin-vertical: 2vh;
 }
 
 /* BASES DOCUMENT */
@@ -23,16 +24,32 @@ h1, h2, h3 {
 }
 
 /* ACCUEIL */
-#division_accueil_texte {
-    height: 100vh;
-    overflow: hidden;
+#division_accueil_boutons {
+    margin: var(--margin-vertical) auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-#image_accueil_fond {
-    height: 100vh;
-    float: left;
-    clip-path: var(--decoupage_image_accueil);
-    shape-outside: var(--decoupage_image_accueil);
+@media screen and (max-width: 1079px) {
+    #image_accueil_fond {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    #division_accueil_texte {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    #image_accueil_fond {
+        height: 100vh;
+        float: left;
+        clip-path: var(--decoupage_image_accueil);
+        shape-outside: var(--decoupage_image_accueil);
+    }
 }
 
 /* EQUIPE */
