@@ -17,10 +17,17 @@
 body, html {
     padding: 0;
     margin: 0;
+    background-color: var(--noir);
+    color: white;
 }
 
 h1, h2, h3 {
     text-align: center;
+    color: var(--jaune);
+}
+
+a {
+    color: inherit;
 }
 
 /* ACCUEIL */
@@ -152,14 +159,13 @@ h1, h2, h3 {
 .caption-container 
 {
     text-align: center;
-    background-color: #222;
     padding: 2px 16px;
-    color: white;
 }
 
 /* FOOTER */
 footer {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 2vh;
+    padding: 1vh 0;
+    background-color: var(--jaune);
 }
