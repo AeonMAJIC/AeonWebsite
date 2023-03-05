@@ -122,16 +122,13 @@ iframe {
     box-sizing: border-box;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-.container 
-{
-    position: relative;
-}
-
 /* Hide the images by default */
 .mySlides 
 {
     display: none;
+    max-width: 100vw;
+    max-height: fit-content;
+    margin: auto;
 }
 
 /* Next & previous buttons */
@@ -139,39 +136,42 @@ iframe {
 {
     cursor: pointer;
     position: absolute;
-    top: 40%;
     width: auto;
     padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
     font-size: 20px;
-    border-radius: 0 3px 3px 0;
+    border-radius: 3px;
     user-select: none;
     -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
-.next 
-{
-    right: 0;
-    border-radius: 3px 0 0 3px;
+@media screen and (max-width: 1079px) {
+    .next 
+    {
+        right: 1vw;
+    }
+
+    .prev 
+    {
+        left: 1vw;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .next 
+    {
+        right: calc((100vw - 1080px) / 2);
+    }
+
+    .prev 
+    {
+        left: calc((100vw - 1080px) / 2);
+    }
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover 
 {
     background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext 
-{
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
 }
 
 /* Container for image text */
